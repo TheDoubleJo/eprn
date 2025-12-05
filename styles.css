@@ -348,6 +348,14 @@ a.service-card {
     background: #f9f9f9;
 }
 
+.service-detail-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+}
+
 .service-content .content-wrapper h2 {
     text-align: center;
     border-bottom: none;

@@ -4,7 +4,13 @@
       "WebFetch(domain:eprn.fr)",
       "Bash(powershell:*)",
       "Bash(dir \"C:\\Users\\julie\\Documents\\repos\\eprn\\images\")",
-      "WebFetch(domain:thedoublejo.github.io)"
+      "WebFetch(domain:thedoublejo.github.io)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
