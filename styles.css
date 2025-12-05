@@ -177,6 +177,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+a.service-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .service-card {
     background: #fff;
     overflow: hidden;
@@ -186,6 +192,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .service-card:hover {
     transform: translateY(-3px);
+}
+
+.service-card-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.service-card-disabled:hover {
+    transform: none;
 }
 
 .service-image {
@@ -325,6 +340,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq-item p {
     margin-bottom: 0;
+}
+
+/* Service detail pages */
+.service-content {
+    padding: 3rem 0;
+    background: #f9f9f9;
+}
+
+.service-content .content-wrapper h2 {
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+
+.service-content .faq-item h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: #111111;
+    margin-bottom: 0.5rem;
+}
+
+.service-cta {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid #111111;
+}
+
+.service-cta h3 {
+    color: #111111;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-cta p {
+    margin-bottom: 0.5rem;
+}
+
+.service-cta a {
+    color: #111111;
+    font-weight: 600;
 }
 
 /* Logo link styling */
