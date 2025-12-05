@@ -70,23 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 
-    // Header scroll effect
-    const header = document.querySelector('.header');
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener('scroll', function() {
-        const currentScrollY = window.scrollY;
-        
-        if (currentScrollY > 100) {
-            header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
-        } else {
-            header.style.backgroundColor = '#fff';
-            header.style.backdropFilter = 'none';
-        }
-        
-        lastScrollY = currentScrollY;
-    });
+    // Removed header scroll effect as header is not sticky in original design
 });
 
 // Performance optimization: Lazy loading images
