@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch(domain:eprn.fr)",
       "Bash(powershell:*)",
-      "Bash(dir \"C:\\Users\\julie\\Documents\\repos\\eprn\\images\")"
+      "Bash(dir \"C:\\Users\\julie\\Documents\\repos\\eprn\\images\")",
+      "WebFetch(domain:thedoublejo.github.io)"
     ],
     "deny": [],
     "ask": []
