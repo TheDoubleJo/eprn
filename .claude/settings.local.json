@@ -10,7 +10,12 @@
       "Bash(git push:*)",
       "Bash(dir:*)",
       "Bash(findstr:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(move:*)",
+      "Bash(xcopy:*)",
+      "Bash(for file in *.html)",
+      "Bash(do sed -i 's|src=\"\"images/|src=\"\"../images/|g; s|href=\"\"images/|href=\"\"../images/|g' \"$file\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
