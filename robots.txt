@@ -1,0 +1,10 @@
+# robots.txt for EPRN website
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://thedoublejo.github.io/eprn/sitemap.xml
+
+# Crawl-delay (optional, helps prevent overloading the server)
+Crawl-delay: 1
