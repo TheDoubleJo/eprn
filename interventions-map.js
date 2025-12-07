@@ -87,15 +87,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // Calculer le total d'interventions
         const totalInterventions = cityData.interventions.reduce((sum, i) => sum + i.count, 0);
 
-        // Déterminer la couleur du marqueur (prendre le type avec le plus d'interventions)
-        const mainType = cityData.interventions.reduce((prev, current) =>
-            (prev.count > current.count) ? prev : current
-        ).type;
+        // Récupérer tous les types d'interventions présents
+        const types = cityData.interventions.map(i => i.type);
+
+        // Créer le style du marqueur en fonction du nombre de types
+        let markerStyle = '';
+        if (types.length === 1) {
+            // Une seule couleur
+            markerStyle = `background-color: ${markerColors[types[0]]};`;
+        } else if (types.length === 2) {
+            // Deux couleurs : dégradé vertical
+            const colors = types.map(t => markerColors[t]);
+            markerStyle = `background: linear-gradient(135deg, ${colors[0]} 50%, ${colors[1]} 50%);`;
+        } else if (types.length === 3) {
+            // Trois couleurs : dégradé en trois sections
+            const colors = types.map(t => markerColors[t]);
+            markerStyle = `background: linear-gradient(135deg, ${colors[0]} 33.33%, ${colors[1]} 33.33%, ${colors[1]} 66.66%, ${colors[2]} 66.66%);`;
+        }
 
         // Créer une icône personnalisée
         const markerIcon = L.divIcon({
             className: 'custom-marker',
-            html: `<div class="marker-pin" style="background-color: ${markerColors[mainType]}">
+            html: `<div class="marker-pin" style="${markerStyle}">
                        <span class="marker-count">${totalInterventions}</span>
                    </div>`,
             iconSize: [30, 42],
