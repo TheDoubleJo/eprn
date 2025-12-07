@@ -6,6 +6,12 @@ url: "https://thedoublejo.github.io"
 # Build settings
 markdown: kramdown
 
+# Exclude documentation files from Jekyll build
+exclude:
+  - CLAUDE.md
+  - GUIDE_CMS.md
+  - README.md
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
