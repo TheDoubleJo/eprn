@@ -4,7 +4,7 @@ backend:
   branch: main
 
 media_folder: "images/uploads"
-public_folder: "/eprn/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: "blog"
@@ -17,5 +17,5 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Image Principale", name: "image", widget: "image", required: false}
-      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Date de publication", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss", format: "YYYY-MM-DD HH:mm:ss ZZ"}
       - {label: "Corps du texte", name: "body", widget: "markdown"}
