@@ -1,21 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:eprn.fr)",
-      "Bash(powershell:*)",
-      "Bash(dir \"C:\\Users\\julie\\Documents\\repos\\eprn\\images\")",
-      "WebFetch(domain:thedoublejo.github.io)",
-      "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git push:*)",
-      "Bash(dir:*)",
-      "Bash(findstr:*)",
-      "Bash(curl:*)",
-      "Bash(move:*)",
-      "Bash(xcopy:*)",
-      "Bash(for file in *.html)",
-      "Bash(do sed -i 's|src=\"\"images/|src=\"\"images/|g; s|href=\"\"images/|href=\"\"images/|g' \"$file\")",
-      "Bash(done)"
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

@@ -4,113 +4,139 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-EPRN (Entreprise Pontoise de Régulation des Nuisibles) is a static website for a pest control company, reproduced from the original WordPress site at eprn.fr for deployment on GitHub Pages. The site is entirely static HTML/CSS/JavaScript with no build process or dependencies.
+EPRN (Entreprise Pontoise de Régulation des Nuisibles) is a Jekyll-based static website for a pest control company in Charente-Maritime, France. The site is deployed on GitHub Pages and integrates Sveltia CMS for content management.
 
 ## Architecture
 
-This is a **pure static website** with no frameworks, build tools, or package managers.
+### Jekyll Static Site Generator
 
-### Multi-Version Structure
+This site uses Jekyll to generate static pages from templates and markdown content. Jekyll configuration is in `_config.yml`.
 
-The site offers **two visual versions** accessible via different URLs:
+**Key Configuration:**
+- Base URL: `/eprn`
+- Site URL: `https://thedoublejo.github.io`
+- Markdown renderer: kramdown
+- Plugins: `jekyll-seo-tag`, `jekyll-sitemap`
+- Default layout: `default` for all pages
+
+### Directory Structure
 
 ```
 eprn/
-├── index.html (version selector landing page)
-├── v1/ (classic version - original design)
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── ... (all page HTML files)
-├── v2/ (modern version - contemporary design)
-│   ├── index.html
-│   ├── styles.css
-│   ├── script.js
-│   └── ... (all page HTML files)
-└── images/ (shared between both versions)
+├── _config.yml              # Jekyll configuration
+├── _layouts/                # Page templates
+│   ├── default.html         # Main layout with header/footer
+│   └── post.html            # Blog post layout
+├── _includes/               # Reusable components
+│   ├── header.html          # Site header with navigation
+│   └── footer.html          # Site footer
+├── _posts/                  # Blog posts (markdown)
+│   └── YYYY-MM-DD-slug.md   # Posts follow Jekyll naming convention
+├── admin/                   # Decap CMS admin interface
+│   ├── config.yml           # CMS configuration
+│   └── index.html           # CMS entry point
+├── images/                  # Image assets
+│   └── uploads/             # CMS-uploaded images
+├── index.html               # Homepage (uses Liquid templating)
+├── actualites.html          # Blog listing page
+├── contact.html             # Contact page
+├── Service pages            # Static service description pages
+│   ├── desinfection.html
+│   ├── desinsectisation.html
+│   ├── deratisation.html
+│   └── traitement-tir.html
+├── Legal pages              # Legal and info pages
+│   ├── mentions-legales.html
+│   ├── politique-confidentialite.html
+│   ├── qui-sommes-nous.html
+│   └── faq.html
+├── styles.css               # Global stylesheet
+└── script.js                # Global JavaScript
 ```
 
-**Version 1 (Classic)**: Original design with neutral colors, traditional layout
-- URL: `/v1/index.html`
-- Colors: Black/gray (#111111, #636363) on white/light gray (#ffffff, #f9f9f9)
-- Style: Professional and understated
+### Templating System
 
-**Version 2 (Modern)**: Contemporary design with gradients and animations
-- URL: `/v2/index.html`
-- Colors: Purple/blue gradients (#667eea, #764ba2) with modern accents
-- Style: Dynamic with smooth animations, rounded corners, and shadow effects
+Pages use **Liquid templating** (Jekyll's template language):
+- Variables: `{{ site.baseurl }}`, `{{ page.title }}`, `{{ content }}`
+- Loops: `{% for post in site.posts %}`
+- Includes: `{% include header.html %}`
+- Front matter: YAML metadata at the top of files between `---` delimiters
 
-**Root index.html**: Elegant landing page allowing users to choose between v1 and v2
+### Sveltia CMS Integration
 
-### Common Elements
+The site includes a modern, lightweight content management system accessible at `/admin/`:
+- **CMS**: Sveltia CMS (modern successor to Netlify/Decap CMS)
+- **Backend**: GitHub (commits directly to the repository)
+- **Authentication**: GitHub Personal Access Token (no OAuth server needed)
+- **Content type**: Blog posts in `_posts/` folder
+- **Media storage**: `images/uploads/`
+- **Configuration**: `admin/config.yml`
 
-- **HTML Pages**: Individual HTML files for each page (index, service pages, legal pages, contact)
-- **Styling**: Each version has its own `styles.css` file with distinct visual styles but identical layout structure
-- **JavaScript**: Each version has `script.js` for vanilla JavaScript interactions (identical functionality)
-- **Assets**: Images stored in shared `images/` directory at root level (accessed via `images/` from version folders)
-- **Fonts**: Google Fonts (Inter and Jost) loaded via CDN
+**Why Sveltia CMS:**
+- Drop-in replacement for Decap CMS (same configuration file)
+- 5x faster (300 KB vs 1.5 MB)
+- Better UI/UX with modern interface
+- No need for Netlify services or OAuth server
+- Active maintenance (bugs fixed within 24h typically)
 
-### Page Structure
+**CMS fields for blog posts:**
+- Title, description, image, date, body (markdown)
+- Slug format: `YYYY-MM-DD-slug`
 
-All pages share a consistent structure:
-- **Header**: Logo (links to index.html), site title, and navigation
-- **Main Content**: Page-specific content
-- **Footer**: Three-column layout with company name, contact info, and legal/informational links
+**User Guide:** See `GUIDE_CMS.md` for detailed instructions on how to create a GitHub token and use the CMS (designed for non-technical users).
 
-### Key Pages
+## Development Commands
 
-- `index.html` - Homepage with hero section and 4 service cards
-- Service pages: `desinfection.html`, `desinsectisation.html`, `deratisation.html`, `traitement-tir.html`
-- `contact.html` - Contact information page
-- Legal pages: `mentions-legales.html`, `politique-confidentialite.html`, `qui-sommes-nous.html`, `faq.html`
+### Local Development
 
-## Development
+```bash
+# Install Jekyll and dependencies (first time only)
+gem install bundler jekyll
 
-### Running Locally
+# Create a Gemfile if needed
+bundle init
+bundle add jekyll
+bundle add jekyll-seo-tag
+bundle add jekyll-sitemap
 
-Since this is a static site, simply open any HTML file in a browser. For a proper local server:
+# Serve the site locally with live reload
+bundle exec jekyll serve
+
+# Access at http://localhost:4000/eprn
+```
+
+### Building
+
+```bash
+# Build the site (outputs to _site/ directory)
+bundle exec jekyll build
+
+# GitHub Pages builds automatically on push to main branch
+```
+
+### Testing Locally Without Jekyll
+
+For quick HTML/CSS/JS testing without Jekyll build:
 
 ```bash
 # Python 3
 python -m http.server 8000
 
-# Python 2
-python -m SimpleHTTPServer 8000
+# Note: Liquid tags won't render, and paths may break
 ```
 
-Then navigate to `http://localhost:8000`
+## Styling and Design
 
-### Deployment
-
-The site is designed for GitHub Pages deployment:
-
-1. Enable GitHub Pages in repository settings
-2. Select "Deploy from a branch"
-3. Choose branch `main` and folder `/root`
-
-No build step is required.
-
-## Styling Conventions
-
-### Color Schemes
-
-**Version 1 (Classic)**
-- Primary text: `#111111`
-- Background: `#f9f9f9`
-- White sections: `#ffffff`
-- Accent/hover: `#636363`
-
-**Version 2 (Modern)**
-- Primary text: `#1a1a2e`
-- Background: Linear gradient `#f5f7fa` to `#e9ecef`
-- White sections: `#ffffff`
-- Primary gradient: `#667eea` to `#764ba2` (purple/blue)
+### Color Scheme
+- Primary gradient: Purple/blue (`#667eea` to `#764ba2`)
+- Text: Dark gray (`#1a1a2e`)
+- Background: White/light gray (`#ffffff`, `#f9f9f9`)
+- Accent: Gold (`#ffd700`)
 - Secondary text: `#4a5568`
-- Accent: `#ffd700` (gold)
 
 ### Typography
-- Headings: `Inter` font family
-- Body text: `Jost` font family
+- Headings: `Inter` font family (Google Fonts)
+- Body text: `Jost` font family (Google Fonts)
 - Base font size: `1.2rem`
 - Line height: `1.55`
 
@@ -118,83 +144,126 @@ No build step is required.
 - Container max-width: `1000px` (content), `1280px` (header/services)
 - Services grid: 4 columns desktop → 2 columns tablet → 1 column mobile
 - Footer grid: 30% / 45% / 20% on desktop, stacks on mobile
-- Responsive breakpoints: 900px, 768px, 600px, 480px
+- Responsive breakpoints: `900px`, `768px`, `600px`, `480px`
 
-## JavaScript Functionality
+### CSS Organization
 
-The `script.js` file provides:
-- Smooth scrolling for anchor links
-- Service card hover interactions
-- Scroll-based animations using Intersection Observer
-- Image error handling
-- Lazy loading support for images with `data-src` attribute
+`styles.css` contains all styles. Key sections:
+- Header and navigation
+- Hero section
+- Services grid and cards (used for both services and blog posts)
+- Service detail pages
+- Contact page
+- Footer
+- Responsive media queries
+
+## SEO and Metadata
+
+The site includes comprehensive SEO optimization in `_layouts/default.html`:
+- **Meta tags**: Description, keywords, canonical URL
+- **Open Graph**: Facebook/social sharing metadata
+- **Twitter Cards**: Twitter-specific metadata
+- **Schema.org**: LocalBusiness structured data with:
+  - Business name, address, phone, email
+  - Geographic coordinates and service area (100km radius)
+  - Opening hours (Mon-Fri 08:00-18:00)
+  - Service types
 
 ## Working with This Codebase
 
-### Working with Multiple Versions
+### Adding a Blog Post
 
-When making content changes that should appear in both versions:
-1. Update the HTML file in **both** `v1/` and `v2/` directories
-2. Keep HTML structure identical between versions - only CSS differs
-3. Image paths use `images/` since files are in subdirectories
+**Via Sveltia CMS (recommended for non-technical users):**
+1. Navigate to `/admin/` (https://thedoublejo.github.io/eprn/admin/)
+2. Authenticate with GitHub Personal Access Token (first time only)
+3. Click "Actualités" → "New Actualités"
+4. Fill in title, description, image, date, and content
+5. Click "Publish" → "Publish now" (commits to GitHub)
+6. GitHub Pages rebuilds the site automatically (~1-2 minutes)
 
-When updating styles:
-1. **v1 changes**: Edit `v1/styles.css` (classic design)
-2. **v2 changes**: Edit `v2/styles.css` (modern design)
-3. Maintain the same CSS class names and HTML structure across both versions
+**Note:** See `GUIDE_CMS.md` for detailed step-by-step instructions with screenshots for creating the GitHub token.
 
-### Adding New Pages
+**Manually:**
+1. Create a file in `_posts/` with format: `YYYY-MM-DD-title-slug.md`
+2. Add YAML front matter:
+```yaml
+---
+layout: post
+title: "Your Title"
+description: "Brief description"
+image: "/images/your-image.jpg"
+date: YYYY-MM-DD HH:MM:SS +0100
+---
+```
+3. Write content in markdown below the front matter
+4. Commit and push
 
-1. Copy an existing HTML file as a template from the appropriate version folder
-2. Update the `<title>` tag
-3. Modify the page header and main content
-4. Ensure header navigation links back appropriately (usually to index.html)
-5. Footer is consistent across all pages - copy as-is
-6. **Important**: If adding to one version, add to the other version as well to maintain parity
+### Modifying Page Templates
 
-### Modifying Services
+**Layouts** (`_layouts/`):
+- `default.html`: Main template for all pages
+- `post.html`: Template for blog posts (extends default)
 
-Service cards appear on the homepage in a 4-column grid. Each card:
-- Links to a dedicated service page
-- Has an image in `images/` directory
-- Shows image hover effect (scale + card lift)
-- Requires both card and dedicated page to be updated
+**Includes** (`_includes/`):
+- `header.html`: Site header and navigation
+- `footer.html`: Site footer with contact info and links
 
-### Editing Styles
+### Editing Service Pages
 
-All styles are in `styles.css`. Key sections:
-- Header and navigation (lines 28-106)
-- Hero section (lines 108-127)
-- Services grid and cards (lines 138-231)
-- Service detail pages (lines 345-395)
-- Contact page (lines 407-545)
-- Footer (lines 547-617)
-- Responsive media queries throughout
+Service pages (desinfection.html, etc.) are static HTML files with:
+- YAML front matter for title and description
+- HTML content in the body
+- Links to images in `images/` directory
+- Use `{{ site.baseurl }}` for all internal links and assets
 
-### Images
+### Path Handling
 
-Place all images in the `images/` directory. Current images:
-- `logo.png` - Header logo
-- `logo-footer.png` - Footer logo (if used)
-- `centre.png` - Coverage area map
-- Service images: `desinfection.jpg`, `Desinfection2.jpg`, `desinsectisation.jpg`, `deratisation.jpg`, `traitement-tir.jpg`
+**Critical**: Always use `{{ site.baseurl }}` for internal links and assets:
+- Correct: `{{ site.baseurl }}/images/logo.png`
+- Correct: `{{ site.baseurl }}/contact.html`
+- Wrong: `/images/logo.png` (breaks on GitHub Pages)
+
+### Data Consistency
+
+Contact information appears in multiple locations and must stay synchronized:
+- `_includes/footer.html`
+- `contact.html`
+- `_layouts/default.html` (Schema.org structured data)
+
+**Current contact details:**
+- Address: 4 Moulin de Barate – 17800 PONS
+- Phone: 06 06 40 07 79 (or +33606400779 in Schema.org)
+- Email: eprn@hotmail.fr
+
+## Deployment
+
+### GitHub Pages
+
+The site deploys automatically via GitHub Pages:
+1. Push to `main` branch
+2. GitHub Pages builds with Jekyll
+3. Site is published at `https://thedoublejo.github.io/eprn`
+
+**Settings:**
+- Source: Deploy from branch `main`, folder `/root`
+- Jekyll builds automatically (no manual build step needed)
+- Build time: ~1-2 minutes
+
+### Sveltia CMS Setup
+
+The CMS is already configured and ready to use. For new users:
+1. User creates a GitHub Personal Access Token (see `GUIDE_CMS.md`)
+2. Token needs `Contents: Read and write` permission on the `TheDoubleJo/eprn` repository
+3. User authenticates once in the CMS at `/admin/`
+4. Browser saves the token locally for future sessions
+
+**No server or OAuth configuration needed** - Sveltia CMS authenticates directly with GitHub using the token.
 
 ## Important Notes
 
-- **No build process**: Changes to HTML/CSS/JS are immediately reflected
-- **No dependencies**: No package.json, no npm/yarn required
-- **Git workflow**: Standard git commands for version control
-- **Character encoding**: All files use UTF-8 encoding
 - **Language**: All content is in French
-- **Accessibility**: Uses semantic HTML5 elements
-
-## Data Consistency
-
-Contact information appears in two places and must be kept synchronized:
-- Footer of every page (footer-column-2)
-- contact.html page content
-
-Current contact details:
-- Address: 4 Moulin de Barate – 17800 PONS
-- Phone: 06 06 40 07 79
-- Email: eprn@hotmail.fr
+- **Character encoding**: UTF-8
+- **Branch**: `main` (not master)
+- **Jekyll version**: Compatible with GitHub Pages (currently Jekyll 3.9+)
+- **No custom plugins**: Only GitHub Pages-approved plugins are used
+- **Liquid syntax**: Used throughout HTML files for templating

@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: TheDoubleJo/eprn # Assumed from context. Change if incorrect.
-  branch: main # or master, assuming main based on modern defaults. I should check.
+  repo: TheDoubleJo/eprn
+  branch: main
 
 media_folder: "images/uploads"
-public_folder: "/images/uploads"
+public_folder: "/eprn/images/uploads"
 
 collections:
   - name: "blog"
