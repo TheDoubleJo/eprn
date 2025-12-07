@@ -47,7 +47,7 @@ eprn/
 - **HTML Pages**: Individual HTML files for each page (index, service pages, legal pages, contact)
 - **Styling**: Each version has its own `styles.css` file with distinct visual styles but identical layout structure
 - **JavaScript**: Each version has `script.js` for vanilla JavaScript interactions (identical functionality)
-- **Assets**: Images stored in shared `images/` directory at root level (accessed via `../images/` from version folders)
+- **Assets**: Images stored in shared `images/` directory at root level (accessed via `images/` from version folders)
 - **Fonts**: Google Fonts (Inter and Jost) loaded via CDN
 
 ### Page Structure
@@ -136,7 +136,7 @@ The `script.js` file provides:
 When making content changes that should appear in both versions:
 1. Update the HTML file in **both** `v1/` and `v2/` directories
 2. Keep HTML structure identical between versions - only CSS differs
-3. Image paths use `../images/` since files are in subdirectories
+3. Image paths use `images/` since files are in subdirectories
 
 When updating styles:
 1. **v1 changes**: Edit `v1/styles.css` (classic design)
