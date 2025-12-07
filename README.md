@@ -8,7 +8,6 @@ Site web statique reproduit depuis [eprn.fr](https://eprn.fr/) pour hébergement
 - `mentions-legales.html` - Mentions légales
 - `politique-confidentialite.html` - Politique de confidentialité
 - `qui-sommes-nous.html` - À propos
-- `faq.html` - Foire aux questions
 - `styles.css` - Styles CSS
 - `script.js` - JavaScript interactions
 - `images/` - Dossier pour les images
