@@ -1,0 +1,34 @@
+Régulation par tir des pigeons de ville :
+-	Lyon 3
+-	Marseille 6
+-	Carpentras 1
+-	Nice 3
+-	Gigean 1
+-	Martignas sur Jalles 2
+-	Malestroit 1
+-	Nantes 7
+-	Agen 1
+-	Toulouse 3
+-	Bordeaux 5
+-	Brest 2
+-	Pau 1
+-	Noisy le grand 1
+-	Arcachon 1
+-	Andernos 1
+-	Angoulême 5
+-	Vallenay 2
+-	Sillé-le guillaume 1
+Régulation par tir des Ragondins
+-	Lyon 1
+-	Caussade 1
+-	St Pierre des corps 1
+Régulation par tir de rongeurs
+-	Marseille 3
+-	Caussade 1
+-	Nérac 1
+-	Baziège 1
+-	Francescas 1
+-	Montcoutant 1
+-	Nantes 1
+-	Nérondes 2
+-	Rosny 1
