@@ -25,7 +25,10 @@ description: "Suivez les dernières actualités et conseils d'EPRN."
                 <div class="service-title" style="text-align: left; padding: 1.5rem;">
                     <span style="font-size: 0.8rem; color: #667eea; display: block; margin-bottom: 0.5rem;">{{ post.date
                         | date: "%d/%m/%Y" }}</span>
-                    {{ post.title }}
+                    <div style="margin-bottom: 0.5rem;">{{ post.title }}</div>
+                    {% if post.description %}
+                    <p style="font-size: 0.9rem; font-weight: 400; color: #4a5568; margin: 0; line-height: 1.4;">{{ post.description }}</p>
+                    {% endif %}
                 </div>
             </a>
             {% endfor %}
