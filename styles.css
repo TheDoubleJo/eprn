@@ -185,16 +185,28 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 100%;
     left: 0;
-    margin-top: 0.5rem;
-    background: #ffffff;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    background: transparent;
     min-width: 250px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 12px;
-    overflow: hidden;
     z-index: 1000;
 }
 
-.nav-dropdown:hover .dropdown-content {
+.dropdown-content::before {
+    content: '';
+    display: block;
+    height: 0.5rem;
+}
+
+.dropdown-content-inner {
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.nav-dropdown:hover .dropdown-content,
+.dropdown-content:hover {
     display: block;
     animation: fadeIn 0.3s ease;
 }
@@ -210,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.dropdown-content a {
+.dropdown-content-inner a {
     display: block;
     padding: 1rem 1.5rem;
     text-decoration: none;
@@ -220,11 +232,11 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.dropdown-content a:last-child {
+.dropdown-content-inner a:last-child {
     border-bottom: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content-inner a:hover {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #ffffff;
     padding-left: 2rem;
@@ -354,8 +366,16 @@ h1, h2, h3, h4, h5, h6 {
 
     .dropdown-content {
         position: static;
-        box-shadow: none;
+        padding-top: 0;
         margin-top: 0;
+    }
+
+    .dropdown-content::before {
+        display: none;
+    }
+
+    .dropdown-content-inner {
+        box-shadow: none;
         border-radius: 0 0 12px 12px;
     }
 
@@ -890,6 +910,29 @@ a.service-card {
     text-decoration: underline;
 }
 
+.footer-contact-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.footer-contact-btn:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    text-decoration: none !important;
+}
+
 .footer-column-3 h2 {
     font-family: 'Jost', sans-serif;
     font-size: 1.2rem;
@@ -956,6 +999,13 @@ a.service-card {
 
     .footer-links a:hover {
         transform: none;
+    }
+
+    .footer-contact-btn {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .content-wrapper {
