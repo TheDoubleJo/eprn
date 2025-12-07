@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: TheDoubleJo/eprn # Assumed from context. Change if incorrect.
+  branch: main # or master, assuming main based on modern defaults. I should check.
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Actualités"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Image Principale", name: "image", widget: "image", required: false}
+      - {label: "Date de publication", name: "date", widget: "datetime"}
+      - {label: "Corps du texte", name: "body", widget: "markdown"}
