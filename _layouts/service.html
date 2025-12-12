@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<!-- Schema.org markup for Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "{{ page.service_type }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "EPRN - Entreprise Pontoise de Régulation des Nuisibles",
+    "telephone": "+33606400779",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4 Moulin de Barate",
+      "addressLocality": "Pons",
+      "postalCode": "17800",
+      "addressCountry": "FR"
+    }
+  },
+  "areaServed": {
+    "@type": "State",
+    "name": "Nouvelle-Aquitaine"
+  },
+  "description": "{{ page.description }}"
+}
+</script>
+
+<section class="page-header">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+    </div>
+</section>
+
+<section class="service-content">
+    <div class="container">
+        <div class="content-wrapper">
+            {% if page.heading %}
+            <h2>{{ page.heading }}</h2>
+            {% endif %}
+
+            {% if page.image %}
+            <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" class="service-detail-image">
+            {% endif %}
+
+            <div class="service-body">
+                {{ content }}
+            </div>
+
+            <div class="service-cta">
+                <h3>PROXIMITE – REACTIVITE – EFFICACITE</h3>
+                <p><strong>Demandez votre devis gratuit et personnalisé</strong></p>
+                <p>Contactez-nous au <a href="tel:0606400779">06 06 40 07 79</a></p>
+                {% if page.show_faq_link and page.faq_url %}
+                <p><a href="{{ site.baseurl }}{{ page.faq_url }}" class="faq-link">📋 {{ page.faq_link_text | default: "Questions fréquentes" }}</a></p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

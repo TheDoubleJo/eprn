@@ -19,3 +19,21 @@ collections:
       - {label: "Image Principale", name: "image", widget: "image", required: false}
       - {label: "Date de publication", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss", format: "YYYY-MM-DD HH:mm:ss ZZ"}
       - {label: "Corps du texte", name: "body", widget: "markdown"}
+
+  - name: "services"
+    label: "Services"
+    folder: "_services"
+    create: false
+    identifier_field: "title"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "service"}
+      - {label: "Titre de la page", name: "title", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et pour le SEO"}
+      - {label: "Description", name: "description", widget: "text", hint: "Description pour le référencement Google"}
+      - {label: "Mots-clés", name: "keywords", widget: "string", hint: "Mots-clés séparés par des virgules pour le SEO"}
+      - {label: "Image principale", name: "image", widget: "image"}
+      - {label: "Type de service", name: "service_type", widget: "string", hint: "Ex: Désinfection Microbienne, Dératisation, etc."}
+      - {label: "Sous-titre (optionnel)", name: "heading", widget: "string", required: false, hint: "Affiché sous le titre principal"}
+      - {label: "Contenu de la page", name: "body", widget: "markdown", hint: "Utilisez le markdown pour formater le texte"}
+      - {label: "Afficher le lien FAQ", name: "show_faq_link", widget: "boolean", default: false}
+      - {label: "URL de la FAQ", name: "faq_url", widget: "string", required: false, hint: "Ex: /faq-desinfection.html"}
+      - {label: "Texte du lien FAQ", name: "faq_link_text", widget: "string", required: false, default: "Questions fréquentes"}

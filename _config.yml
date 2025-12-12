@@ -16,8 +16,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:name.html
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
