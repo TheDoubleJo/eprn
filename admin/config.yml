@@ -51,7 +51,7 @@ collections:
             summary: "{{fields.city}} - {{fields.type}} ({{fields.count}})"
             fields:
               - {label: "Ville", name: "city", widget: "string", hint: "Nom de la ville"}
-              - {label: "Latitude", name: "lat", widget: "number", value_type: "float", step: 0.0001, hint: "Coordonnée GPS latitude"}
-              - {label: "Longitude", name: "lng", widget: "number", value_type: "float", step: 0.0001, hint: "Coordonnée GPS longitude"}
+              - {label: "Latitude", name: "lat", widget: "number", value_type: "float", step: 0.0001, min: -90, max: 90, hint: "Coordonnée GPS latitude (-90 à 90)"}
+              - {label: "Longitude", name: "lng", widget: "number", value_type: "float", step: 0.0001, min: -180, max: 180, hint: "Coordonnée GPS longitude (-180 à 180)"}
               - {label: "Type d'intervention", name: "type", widget: "select", options: ["pigeons", "ragondins", "rongeurs"]}
               - {label: "Nombre d'interventions", name: "count", widget: "number", value_type: "int", min: 1, default: 1}
