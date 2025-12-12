@@ -143,7 +143,7 @@ interventions:
     lat: 47.2184
     lng: -1.5536
     type: rongeurs
-    count: 30
+    count: 1
   - city: Nérondes
     lat: 46.9878
     lng: 2.8203
@@ -154,8 +154,3 @@ interventions:
     lng: 2.4836
     type: rongeurs
     count: 1
-  - city: Reiims
-    lat: 49.25
-    lng: 4.033
-    type: ragondins
-    count: 10
