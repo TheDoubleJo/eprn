@@ -1,4 +1,5 @@
 # Données des interventions par ville
+interventions:
 # Pigeons
 - city: "Lyon"
   lat: 45.764
