@@ -79,3 +79,8 @@ Dératisation, désinsectisation, désinfection et traitement par tir."
         <p class="map-legend-note">Les marqueurs affichant plusieurs couleurs indiquent que plusieurs types d'interventions ont été réalisés dans cette ville.</p>
     </div>
 </section>
+
+<script>
+    // Injecter les données des interventions depuis Jekyll
+    window.INTERVENTIONS_DATA = {{ site.data.interventions | jsonify }};
+</script>
