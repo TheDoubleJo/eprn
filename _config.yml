@@ -1,7 +1,7 @@
 title: "EPRN - Dératisation, Désinfection, Désinsectisation en Charente-Maritime"
 description: "EPRN : spécialiste de la régulation des nuisibles en Charente-Maritime et Nouvelle-Aquitaine. Dératisation, désinsectisation, désinfection et traitement par tir."
-baseurl: "/eprn"
-url: "https://thedoublejo.github.io"
+baseurl: ""
+url: "https://eprn.fr"
 
 # Build settings
 markdown: kramdown
