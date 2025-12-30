@@ -2,6 +2,39 @@
 layout: default
 title: "FAQ Désinsectisation - EPRN"
 description: "Questions fréquentes sur la désinsectisation en Charente-Maritime. Réponses sur l'élimination des cafards, punaises de lit, guêpes, frelons et autres insectes."
+faq_items:
+  - question: "Quels types d'insectes traitez-vous ?"
+    answer: "Nous traitons **tous les insectes nuisibles** : insectes rampants (cafards, blattes, fourmis, punaises de lit, araignées), insectes volants (mouches, moustiques, mites), et insectes piquants (puces). Nous adaptons notre traitement à chaque espèce."
+
+  - question: "Comment se déroule une intervention de désinsectisation ?"
+    answer: "Notre approche suit 4 étapes : **INSPECTION** pour identifier l'espèce et localiser les foyers, **TRAITEMENT SUR MESURE** adapté à votre situation, **CONTRÔLE** de l'efficacité du traitement, et **PRÉVENTION** avec des conseils pour éviter les récidives."
+
+  - question: "Quels moyens utilisez-vous pour la désinsectisation ?"
+    answer: "Nous disposons d'une large gamme de solutions : poudre sèche, fumigène, appât prêt à l'emploi, micro-encapsulé, suspension concentrée, laque, piège à phéromones, bande collante, lampes UV... Le choix dépend de l'insecte ciblé et de votre environnement."
+
+  - question: "Vos traitements sont-ils écologiques ?"
+    answer: "Oui, notre expertise repose sur une **approche éthique** : nous traitons les nuisibles sans déséquilibrer l'écosystème. Nous privilégions des méthodes respectueuses de l'environnement tout en garantissant une efficacité maximale."
+
+  - question: "Comment éliminer les punaises de lit ?"
+    answer: "Les punaises de lit nécessitent un traitement professionnel combinant plusieurs méthodes : inspection minutieuse, traitement chimique ciblé et spécifique, traitement thermique si nécessaire, et contrôles successifs. Deux interventions sont généralement nécessaires, nous prévoyons un suivi."
+
+  - question: "Intervenez-vous pour les nids de guêpes et frelons ?"
+    answer: "Non, pour ces insectes, nous travaillons en partenariat avec des spécialistes équipés pour détruire les nids de **guêpes, frelons européens et frelons asiatiques** en toute sécurité, quelle que soit leur hauteur ou leur emplacement. Ils utilisent des techniques adaptées à chaque situation."
+
+  - question: "Dois-je quitter mon domicile pendant le traitement ?"
+    answer: "Cela dépend du type de traitement. Pour certaines méthodes (fumigation, pulvérisation), il est recommandé de quitter les lieux pendant quelques heures. Nous vous indiquons toujours les précautions à prendre et le délai avant de réintégrer."
+
+  - question: "Combien de temps faut-il pour éliminer une infestation ?"
+    answer: "La durée varie selon l'espèce et l'ampleur de l'infestation. Certains traitements sont efficaces en 24-48h, d'autres nécessitent plusieurs semaines avec des interventions successives (notamment pour les punaises de lit ou les cafards)."
+
+  - question: "Comment prévenir le retour des insectes ?"
+    answer: "Nous vous donnons des **conseils personnalisés** : colmater les fissures, éliminer les sources de nourriture et d'eau, améliorer l'hygiène, installer des moustiquaires, utiliser des répulsifs naturels... La prévention est essentielle pour éviter les récidives."
+
+  - question: "Vos interventions sont-elles garanties ?"
+    answer: "Oui, nos interventions sont garanties selon le type de traitement. Nous assurons un suivi et des passages de contrôle pour vérifier l'efficacité. Les modalités de garantie sont précisées dans votre devis personnalisé."
+
+  - question: "Quelle est votre zone d'intervention pour une désinsectisation ?"
+    answer: "Nous pouvons intervenir dans toute la Charente maritime, mais nos principaux chantiers ne dépassent pas 30 à 40 Km autour de Pons. Jonzac, Saintes, Cognac, Mirambeau, St Genis de Saintonge, Gémozac, St Jean d'Angély..."
 ---
 <!-- Schema.org markup for FAQPage -->
 <script type="application/ld+json">
@@ -9,62 +42,16 @@ description: "Questions fréquentes sur la désinsectisation en Charente-Maritim
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {% for item in page.faq_items %}
     {
       "@type": "Question",
-      "name": "Quels types d'insectes traitez-vous ?",
+      "name": "{{ item.question }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nous traitons tous les insectes nuisibles : insectes rampants (cafards, blattes, fourmis, punaises de lit, araignées), insectes volants (mouches, moustiques, mites), et insectes piquants (puces). Nous adaptons notre traitement à chaque espèce."
+        "text": "{{ item.answer | strip_html }}"
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment se déroule une intervention de désinsectisation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Notre approche suit 4 étapes : INSPECTION pour identifier l'espèce et localiser les foyers, TRAITEMENT SUR MESURE adapté à votre situation, CONTRÔLE de l'efficacité du traitement, et PRÉVENTION avec des conseils pour éviter les récidives."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Vos traitements sont-ils écologiques ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, notre expertise repose sur une approche éthique : nous traitons les nuisibles sans déséquilibrer l'écosystème. Nous privilégions des méthodes respectueuses de l'environnement tout en garantissant une efficacité maximale."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment éliminer les punaises de lit ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Les punaises de lit nécessitent un traitement professionnel combinant plusieurs méthodes : inspection minutieuse, traitement chimique ciblé et spécifique, traitement thermique si nécessaire, et contrôles successifs. Deux interventions sont généralement nécessaires."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Dois-je quitter mon domicile pendant le traitement ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cela dépend du type de traitement. Pour certaines méthodes (fumigation, pulvérisation), il est recommandé de quitter les lieux pendant quelques heures. Nous vous indiquons toujours les précautions à prendre et le délai avant de réintégrer."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Combien de temps faut-il pour éliminer une infestation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "La durée varie selon l'espèce et l'ampleur de l'infestation. Certains traitements sont efficaces en 24-48h, d'autres nécessitent plusieurs semaines avec des interventions successives (notamment pour les punaises de lit ou les cafards)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment prévenir le retour des insectes ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nous vous donnons des conseils personnalisés : colmater les fissures, éliminer les sources de nourriture et d'eau, améliorer l'hygiène, installer des moustiquaires, utiliser des répulsifs naturels. La prévention est essentielle pour éviter les récidives."
-      }
-    }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]
 }
 </script>
@@ -105,60 +92,12 @@ description: "Questions fréquentes sur la désinsectisation en Charente-Maritim
 <section class="faq-content">
     <div class="container">
         <div class="content-wrapper">
+            {% for item in page.faq_items %}
             <div class="faq-item">
-                <h4>1. Quels types d'insectes traitez-vous ?</h4>
-                <p>Nous traitons <strong>tous les insectes nuisibles</strong> : insectes rampants (cafards, blattes, fourmis, punaises de lit, araignées), insectes volants (mouches, moustiques, mites), et insectes piquants (puces). Nous adaptons notre traitement à chaque espèce.</p>
+                <h4>{{ forloop.index }}. {{ item.question }}</h4>
+                {{ item.answer | markdownify }}
             </div>
-
-            <div class="faq-item">
-                <h4>2. Comment se déroule une intervention de désinsectisation ?</h4>
-                <p>Notre approche suit 4 étapes : <strong>INSPECTION</strong> pour identifier l'espèce et localiser les foyers, <strong>TRAITEMENT SUR MESURE</strong> adapté à votre situation, <strong>CONTRÔLE</strong> de l'efficacité du traitement, et <strong>PRÉVENTION</strong> avec des conseils pour éviter les récidives.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>3. Quels moyens utilisez-vous pour la désinsectisation ?</h4>
-                <p>Nous disposons d'une large gamme de solutions : poudre sèche, fumigène, appât prêt à l'emploi, micro-encapsulé, suspension concentrée, laque, piège à phéromones, bande collante, lampes UV... Le choix dépend de l'insecte ciblé et de votre environnement.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>4. Vos traitements sont-ils écologiques ?</h4>
-                <p>Oui, notre expertise repose sur une <strong>approche éthique</strong> : nous traitons les nuisibles sans déséquilibrer l'écosystème. Nous privilégions des méthodes respectueuses de l'environnement tout en garantissant une efficacité maximale.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>5. Comment éliminer les punaises de lit ?</h4>
-                <p>Les punaises de lit nécessitent un traitement professionnel combinant plusieurs méthodes : inspection minutieuse, traitement chimique ciblé et spécifique, traitement thermique si nécessaire, et contrôles successifs. Deux interventions sont généralement nécessaires, nous prévoyons un suivi.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>6. Intervenez-vous pour les nids de guêpes et frelons ?</h4>
-                <p>Non, pour ces insectes, nous travaillons en partenariat avec des spécialistes équipés pour détruire les nids de <strong>guêpes, frelons européens et frelons asiatiques</strong> en toute sécurité, quelle que soit leur hauteur ou leur emplacement. Ils utilisent des techniques adaptées à chaque situation.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>7. Dois-je quitter mon domicile pendant le traitement ?</h4>
-                <p>Cela dépend du type de traitement. Pour certaines méthodes (fumigation, pulvérisation), il est recommandé de quitter les lieux pendant quelques heures. Nous vous indiquons toujours les précautions à prendre et le délai avant de réintégrer.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>8. Combien de temps faut-il pour éliminer une infestation ?</h4>
-                <p>La durée varie selon l'espèce et l'ampleur de l'infestation. Certains traitements sont efficaces en 24-48h, d'autres nécessitent plusieurs semaines avec des interventions successives (notamment pour les punaises de lit ou les cafards).</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>9. Comment prévenir le retour des insectes ?</h4>
-                <p>Nous vous donnons des <strong>conseils personnalisés</strong> : colmater les fissures, éliminer les sources de nourriture et d'eau, améliorer l'hygiène, installer des moustiquaires, utiliser des répulsifs naturels... La prévention est essentielle pour éviter les récidives.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>10. Vos interventions sont-elles garanties ?</h4>
-                <p>Oui, nos interventions sont garanties selon le type de traitement. Nous assurons un suivi et des passages de contrôle pour vérifier l'efficacité. Les modalités de garantie sont précisées dans votre devis personnalisé.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>11. Quelle est votre zone d'intervention pour une désinsectisation ?</h4>
-                <p>Nous pouvons intervenir dans toute la Charente maritime, mais nos principaux chantiers ne dépassent pas 30 à 40 Km autour de Pons. Jonzac, Saintes, Cognac, Mirambeau, St Genis de Saintonge, Gémozac, St Jean d'Angély...</p>
-            </div>
+            {% endfor %}
 
             <div class="service-cta">
                 <h3>PROXIMITE – REACTIVITE – EFFICACITE</h3>

@@ -2,6 +2,36 @@
 layout: default
 title: "FAQ Traitement par Tir - EPRN"
 description: "Questions fréquentes sur le traitement sanitaire par tir en Charente-Maritime. Dépigeonisation, régulation de la faune sauvage, tir létal et non létal."
+faq_items:
+  - question: "Qu'est-ce que le traitement sanitaire par tir ?"
+    answer: "Le traitement sanitaire par tir est une méthode de **régulation des populations animales** nuisibles ou déséquilibrées qui engendrent des nuisances notemment des risques de transmission de zoonoses à l'homme. Il s'applique à la faune sauvage, aux animaux d'élevage échappés ou aux espèces indésirables causant des dégâts importants. C'est notre **activité principale** chez EPRN."
+
+  - question: "Quelles sont les différences entre tir létal et tir non létal ?"
+    answer: "**Tir létal** : utilisé quand la population est invasive ou trop importante et représente un danger pour l'écosystème, la santé publique, les cultures ou la sécurité. Permet de rétablir rapidement un équilibre naturel.**Tir non létal** : Surtout pour les espèces échappées ou dangereuses, nous utilisons la télé-injection avec fusil hypodermique pour les endormir sans stress et sans causer de dommages permanents."
+
+  - question: "Quelles espèces peuvent être régulées par tir ?"
+    answer: "Nous intervenons principalement pour la **dépigeonisation et la dératisation**, mais aussi pour la régulation de la faune sauvage problématique : sangliers, corvidés, renards, ragondins, et autres espèces classées nuisibles ou susceptibles d'occasionner des dégats et en surnombre selon la réglementation en vigueur."
+
+  - question: "Le traitement par tir est-il légal ?"
+    answer: "Oui, nos interventions sont parfaitement **encadrées par la loi**. Nous respectons les réglementations communales, préfectorales, ministérielles, les saisons, les statuts de chaque espèce et les quotas réglementaires. Quelque soit notre client, nous définissons ensemble les modalités d'intervention."
+
+  - question: "Comment se déroule une intervention de dépigeonisation ?"
+    answer: "Nous commençons par une **évaluation de la situation** pour identifier l'ampleur du problème. Ensuite, nous mettons en œuvre la **régulation des populations** par tir, souvent en horaires décalés pour limiter les nuisances. Nous assurons un **suivi** pour évaluer l'efficacité et adapter nos méthodes si nécessaire."
+
+  - question: "Intervenez-vous la nuit ou le week-end ?"
+    answer: "Oui, nous sommes **à votre écoute tous les jours, soirs et week-end**. Nous intervenons souvent en horaires décalés pour garantir l'efficacité et la discrétion de nos opérations. Une réponse à votre problématique vous sera proposée dans les 48 heures."
+
+  - question: "Vos interventions sont-elles discrètes ?"
+    answer: "Oui, nous garantissons un **traitement en toute discrétion**. Nos équipes sont formées pour intervenir de manière professionnelle, sans attirer l'attention, et dans le respect de votre environnement et de vos voisins."
+
+  - question: "Respectez-vous la biodiversité lors des interventions ?"
+    answer: "Absolument. Nous avons un **engagement pour la biodiversité** : nos interventions visent à restaurer l'équilibre naturel, pas à détruire les écosystèmes. Nous adoptons une **approche éthique** respectant les normes légales et environnementales."
+
+  - question: "Proposez-vous des formations ou des conseils ?"
+    answer: "Oui, nous proposons des **formations et conseils** aux particuliers et aux entreprises sur les meilleures pratiques pour prévenir les invasions et installations d'animaux indésirables. Nous partageons notre expertise pour vous aider à long terme."
+
+  - question: "Comment obtenir un devis pour une régulation par tir ?"
+    answer: "Contactez-nous au [06 06 40 07 79](tel:0606400779) pour décrire votre situation. Nous effectuons une **évaluation détaillée** de la problématique, puis nous vous proposons un plan d'action adapté avec un devis personnalisé. Nous travaillons avec des particuliers, des entreprises et des collectivités."
 ---
 <!-- Schema.org markup for FAQPage -->
 <script type="application/ld+json">
@@ -9,62 +39,16 @@ description: "Questions fréquentes sur le traitement sanitaire par tir en Chare
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {% for item in page.faq_items %}
     {
       "@type": "Question",
-      "name": "Qu'est-ce que le traitement sanitaire par tir ?",
+      "name": "{{ item.question }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le traitement sanitaire par tir est une méthode de régulation des populations animales nuisibles ou déséquilibrées. Il s'applique à la faune sauvage, aux animaux d'élevage échappés ou aux espèces indésirables causant des dégâts importants. C'est notre activité principale chez EPRN."
+        "text": "{{ item.answer | strip_html }}"
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Quelles sont les différences entre tir létal et tir non létal ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Tir létal : utilisé quand la population est invasive et représente un danger pour l'écosystème, la santé publique ou les cultures. Tir non létal : pour les espèces échappées ou dangereuses, nous utilisons la télé-injection avec fusil hypodermique pour les endormir sans stress."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quelles espèces peuvent être régulées par tir ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nous intervenons principalement pour la dépigeonisation et la dératisation, mais aussi pour la régulation de la faune sauvage problématique : sangliers, corvidés, renards, ragondins, et autres espèces classées nuisibles selon la réglementation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Le traitement par tir est-il légal ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, nos interventions sont parfaitement encadrées par la loi. Nous respectons les réglementations, les saisons, les statuts de chaque espèce et les quotas réglementaires. Nous définissons ensemble les modalités d'intervention."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment se déroule une intervention de dépigeonisation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nous commençons par une évaluation de la situation. Ensuite, nous mettons en œuvre la régulation des populations par tir, souvent en horaires décalés. Nous assurons un suivi pour évaluer l'efficacité et adapter nos méthodes si nécessaire."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Intervenez-vous la nuit ou le week-end ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, nous sommes à votre écoute tous les jours, soirs et week-end. Nous intervenons souvent en horaires décalés pour garantir l'efficacité et la discrétion de nos opérations. Une réponse vous sera proposée dans les 48 heures."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Respectez-vous la biodiversité lors des interventions ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Absolument. Nos interventions visent à restaurer l'équilibre naturel, pas à détruire les écosystèmes. Nous adoptons une approche éthique respectant les normes légales et environnementales."
-      }
-    }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]
 }
 </script>
@@ -105,55 +89,12 @@ description: "Questions fréquentes sur le traitement sanitaire par tir en Chare
 <section class="faq-content">
     <div class="container">
         <div class="content-wrapper">
+            {% for item in page.faq_items %}
             <div class="faq-item">
-                <h4>1. Qu'est-ce que le traitement sanitaire par tir ?</h4>
-                <p>Le traitement sanitaire par tir est une méthode de <strong>régulation des populations animales</strong> nuisibles ou déséquilibrées qui engendrent des nuisances notemment des risques de transmission de zoonoses à l'homme. Il s'applique à la faune sauvage, aux animaux d'élevage échappés ou aux espèces indésirables causant des dégâts importants. C'est notre <strong>activité principale</strong> chez EPRN.</p>
+                <h4>{{ forloop.index }}. {{ item.question }}</h4>
+                {{ item.answer | markdownify }}
             </div>
-
-            <div class="faq-item">
-                <h4>2. Quelles sont les différences entre tir létal et tir non létal ?</h4>
-                <p><strong>Tir létal</strong> : utilisé quand la population est invasive ou trop importante et représente un danger pour l'écosystème, la santé publique, les cultures ou la sécurité. Permet de rétablir rapidement un équilibre naturel.<strong>Tir non létal</strong> : Surtout pour les espèces échappées ou dangereuses, nous utilisons la télé-injection avec fusil hypodermique pour les endormir sans stress et sans causer de dommages permanents.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>3. Quelles espèces peuvent être régulées par tir ?</h4>
-                <p>Nous intervenons principalement pour la <strong>dépigeonisation et la dératisation</strong>, mais aussi pour la régulation de la faune sauvage problématique : sangliers, corvidés, renards, ragondins, et autres espèces classées nuisibles ou susceptibles d'occasionner des dégats et en surnombre selon la réglementation en vigueur.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>4. Le traitement par tir est-il légal ?</h4>
-                <p>Oui, nos interventions sont parfaitement <strong>encadrées par la loi</strong>. Nous respectons les réglementations communales, préfectorales, ministérielles, les saisons, les statuts de chaque espèce et les quotas réglementaires. Quelque soit notre client, nous définissons ensemble les modalités d'intervention.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>5. Comment se déroule une intervention de dépigeonisation ?</h4>
-                <p>Nous commençons par une <strong>évaluation de la situation</strong> pour identifier l'ampleur du problème. Ensuite, nous mettons en œuvre la <strong>régulation des populations</strong> par tir, souvent en horaires décalés pour limiter les nuisances. Nous assurons un <strong>suivi</strong> pour évaluer l'efficacité et adapter nos méthodes si nécessaire.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>6. Intervenez-vous la nuit ou le week-end ?</h4>
-                <p>Oui, nous sommes <strong>à votre écoute tous les jours, soirs et week-end</strong>. Nous intervenons souvent en horaires décalés pour garantir l'efficacité et la discrétion de nos opérations. Une réponse à votre problématique vous sera proposée dans les 48 heures.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>7. Vos interventions sont-elles discrètes ?</h4>
-                <p>Oui, nous garantissons un <strong>traitement en toute discrétion</strong>. Nos équipes sont formées pour intervenir de manière professionnelle, sans attirer l'attention, et dans le respect de votre environnement et de vos voisins.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>8. Respectez-vous la biodiversité lors des interventions ?</h4>
-                <p>Absolument. Nous avons un <strong>engagement pour la biodiversité</strong> : nos interventions visent à restaurer l'équilibre naturel, pas à détruire les écosystèmes. Nous adoptons une <strong>approche éthique</strong> respectant les normes légales et environnementales.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>9. Proposez-vous des formations ou des conseils ?</h4>
-                <p>Oui, nous proposons des <strong>formations et conseils</strong> aux particuliers et aux entreprises sur les meilleures pratiques pour prévenir les invasions et installations d'animaux indésirables. Nous partageons notre expertise pour vous aider à long terme.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>10. Comment obtenir un devis pour une régulation par tir ?</h4>
-                <p>Contactez-nous au <a href="tel:0606400779">06 06 40 07 79</a> pour décrire votre situation. Nous effectuons une <strong>évaluation détaillée</strong> de la problématique, puis nous vous proposons un plan d'action adapté avec un devis personnalisé. Nous travaillons avec des particuliers, des entreprises et des collectivités.</p>
-            </div>
+            {% endfor %}
 
             <div class="service-cta">
                 <h3>PROXIMITE – REACTIVITE – EFFICACITE</h3>

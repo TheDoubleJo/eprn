@@ -2,6 +2,39 @@
 layout: default
 title: "FAQ Dératisation - EPRN"
 description: "Questions fréquentes sur la dératisation en Charente-Maritime. Réponses sur l'élimination des rats, souris, campagnols et rongeurs nuisibles."
+faq_items:
+  - question: "Qu'est-ce que la dératisation ?"
+    answer: "La **dératisation** désigne l'ensemble des mesures prises pour éliminer les rats et autres rongeurs nuisibles dans un bâtiment ou un espace extérieur. Cela inclut des méthodes de prévention, de détection et de traitement curatif à chaque situation. L'objectif est de limiter les risques sanitaires et les dégâts matériels causés par ces animaux."
+
+  - question: "Pourquoi faut-il faire appel à un professionnel pour la dératisation ?"
+    answer: "Faire appel à un professionnel de la dératisation est essentiel pour garantir une intervention rapide et efficace. Les experts en dératisation utilisent des techniques adaptées à chaque type d'infestation et peuvent garantir la destruction totale des rongeurs par l'utilisation de produits biocides réservés aux personnels agréés. De plus, ils veillent à ce que la dératisation respecte les normes de sécurité quelque soit la méthodologie employée \"tir ou rodonticides\"."
+
+  - question: "Comment savoir si j'ai une infestation de rats ?"
+    answer: "Les signes d'infestation par des rats incluent des bruits suspects la nuit, des excréments visibles, des odeurs d'urine particulièrements acides, des traces de passage (telles que des empreintes de pattes) et des dégâts sur les installations électriques, les câbles ou les meubles. Si vous remarquez ces signes, il est fortement recommandé de faire intervenir un professionnel en **dératisation**."
+
+  - question: "Quels types de rongeurs traitez-vous ?"
+    answer: "Nous traitons tous les rongeurs nuisibles : **rats noirs** (rats des greniers), **surmulots** (rats d'égout), **souris** domestiques, et **campagnols** (rongeurs des champs). Chaque espèce nécessite une approche spécifique."
+
+  - question: "Comment se déroule une intervention de dératisation ?"
+    answer: "Notre approche suit 4 étapes : **DIAGNOSTIC** pour identifier l'espèce et évaluer l'ampleur de l'infestation, **ÉLIMINATION** par des méthodes adaptées, **CONTRÔLE** de l'efficacité, et **PRÉVENTION** pour éviter les récidives (colmatage des accès, conseils d'hygiène)."
+
+  - question: "Quelles méthodes utilisez-vous pour la dératisation ?"
+    answer: "Nous proposons des solutions **chimiques** grâce à des produits biocides professionnels et des **solutions alternatives** par des systèmes mécaniques (pièges, tapettes) avec ou sans placébos. Notre spécialité est dans la régulation par tir d'une population d'un entrepôt, mais également du traitement par tir d'un ou deux individus dans un local précis. Nous sommes attentifs à votre environnement et à vos spécificités, sans oublier l'herméticité des locaux."
+
+  - question: "Les produits utilisés sont-ils dangereux pour mes animaux domestiques ?"
+    answer: "Nous prenons toutes les précautions nécessaires pour protéger vos animaux domestiques. Les produits sont placés dans des postes d'appâtage sécurisés, inaccessibles aux chiens et chats. Nous privilégions les méthodes mécaniques quand des animaux sont présents."
+
+  - question: "Combien de temps faut-il pour éliminer une infestation de rats ?"
+    answer: "La durée varie selon l'ampleur de l'infestation. Une intervention légère peut être résolue en 1-2 semaines, tandis qu'une infestation importante peut nécessiter 4 à 6 semaines avec plusieurs passages de contrôle et de réappâtage."
+
+  - question: "Comment prévenir le retour des rongeurs ?"
+    answer: "La prévention passe par plusieurs mesures : colmater les **points d'entrée** (trous, fissures), gérer correctement les **déchets**, éliminer les sources de nourriture accessibles, contrôler l'humidité, et maintenir une bonne hygiène. Nous vous conseillons sur toutes ces mesures."
+
+  - question: "La dératisation est-elle obligatoire ?"
+    answer: "Oui, dans certains cas. La réglementation impose une obligation de dératisation pour les établissements recevant du public (ERP), les commerces alimentaires, les restaurants, et certaines industries. Le non-respect peut entraîner des sanctions. Nous vous aidons à rester conforme."
+
+  - question: "Quelle est votre zone d'intervention pour une dératisation ?"
+    answer: "Nous pouvons intervenir dans toute la Charente maritime, mais nos principaux chantiers ne dépassent pas 30 à 40 Km autour de Pons. Jonzac, Saintes, Cognac, Mirambeau, St Genis de Saintonge, Gémozac, St Jean d'Angély..."
 ---
 <!-- Schema.org markup for FAQPage -->
 <script type="application/ld+json">
@@ -9,70 +42,16 @@ description: "Questions fréquentes sur la dératisation en Charente-Maritime. R
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {% for item in page.faq_items %}
     {
       "@type": "Question",
-      "name": "Qu'est-ce que la dératisation ?",
+      "name": "{{ item.question }}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La dératisation désigne l'ensemble des mesures prises pour éliminer les rats et autres rongeurs nuisibles dans un bâtiment ou un espace extérieur. Cela inclut des méthodes de prévention, de détection et de traitement curatif à chaque situation. L'objectif est de limiter les risques sanitaires et les dégâts matériels causés par ces animaux."
+        "text": "{{ item.answer | strip_html }}"
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Pourquoi faut-il faire appel à un professionnel pour la dératisation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Faire appel à un professionnel de la dératisation est essentiel pour garantir une intervention rapide et efficace. Les experts en dératisation utilisent des techniques adaptées à chaque type d'infestation et peuvent garantir la destruction totale des rongeurs par l'utilisation de produits biocides réservés aux personnels agréés."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment savoir si j'ai une infestation de rats ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Les signes d'infestation par des rats incluent des bruits suspects la nuit, des excréments visibles, des odeurs d'urine particulièrement acides, des traces de passage (telles que des empreintes de pattes) et des dégâts sur les installations électriques, les câbles ou les meubles."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quels types de rongeurs traitez-vous ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nous traitons tous les rongeurs nuisibles : rats noirs (rats des greniers), surmulots (rats d'égout), souris domestiques, et campagnols (rongeurs des champs). Chaque espèce nécessite une approche spécifique."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment se déroule une intervention de dératisation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Notre approche suit 4 étapes : DIAGNOSTIC pour identifier l'espèce et évaluer l'ampleur de l'infestation, ÉLIMINATION par des méthodes adaptées, CONTRÔLE de l'efficacité, et PRÉVENTION pour éviter les récidives (colmatage des accès, conseils d'hygiène)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Combien de temps faut-il pour éliminer une infestation de rats ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "La durée varie selon l'ampleur de l'infestation. Une intervention légère peut être résolue en 1-2 semaines, tandis qu'une infestation importante peut nécessiter 4 à 6 semaines avec plusieurs passages de contrôle et de réappâtage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "La dératisation est-elle obligatoire ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, dans certains cas. La réglementation impose une obligation de dératisation pour les établissements recevant du public (ERP), les commerces alimentaires, les restaurants, et certaines industries. Le non-respect peut entraîner des sanctions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Quelle est votre zone d'intervention pour une dératisation ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nous pouvons intervenir dans toute la Charente maritime, mais nos principaux chantiers ne dépassent pas 30 à 40 Km autour de Pons. Jonzac, Saintes, Cognac, Mirambeau, St Genis de Saintonge, Gémozac, St Jean d'Angély."
-      }
-    }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]
 }
 </script>
@@ -113,71 +92,12 @@ description: "Questions fréquentes sur la dératisation en Charente-Maritime. R
 <section class="faq-content">
     <div class="container">
         <div class="content-wrapper">
+            {% for item in page.faq_items %}
             <div class="faq-item">
-                <h4>1. Qu'est-ce que la dératisation ?</h4>
-                <p>La <strong>dératisation</strong> désigne l'ensemble des mesures prises pour éliminer les rats
-                    et autres rongeurs nuisibles dans un bâtiment ou un espace extérieur. Cela inclut des
-                    méthodes de prévention, de détection et de traitement curatif à chaque situation.
-                    L'objectif est de limiter les risques sanitaires et les dégâts matériels causés par ces
-                    animaux.</p>
+                <h4>{{ forloop.index }}. {{ item.question }}</h4>
+                {{ item.answer | markdownify }}
             </div>
-
-            <div class="faq-item">
-                <h4>2. Pourquoi faut-il faire appel à un professionnel pour la dératisation ?</h4>
-                <p>Faire appel à un professionnel de la dératisation est essentiel pour garantir une
-                    intervention rapide et efficace. Les experts en dératisation utilisent des techniques
-                    adaptées à chaque type d'infestation et peuvent garantir la destruction totale des rongeurs par l'utilisation de produits biocides réservés aux personnels agréés.
-                    De plus, ils veillent à ce que la dératisation respecte les normes de sécurité quelque soit la méthodologie employée "tir ou rodonticides".</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>3. Comment savoir si j'ai une infestation de rats ?</h4>
-                <p>Les signes d'infestation par des rats incluent des bruits suspects la nuit, des excréments
-                    visibles, des odeurs d'urine particulièrements acides, des traces de passage (telles que des empreintes de pattes) et des dégâts sur les
-                    installations électriques, les câbles ou les meubles. Si vous remarquez ces signes, il est
-                    fortement recommandé de faire intervenir un professionnel en <strong>dératisation</strong>.
-                </p>
-            </div>
-
-            <div class="faq-item">
-                <h4>4. Quels types de rongeurs traitez-vous ?</h4>
-                <p>Nous traitons tous les rongeurs nuisibles : <strong>rats noirs</strong> (rats des greniers), <strong>surmulots</strong> (rats d'égout), <strong>souris</strong> domestiques, et <strong>campagnols</strong> (rongeurs des champs). Chaque espèce nécessite une approche spécifique.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>5. Comment se déroule une intervention de dératisation ?</h4>
-                <p>Notre approche suit 4 étapes : <strong>DIAGNOSTIC</strong> pour identifier l'espèce et évaluer l'ampleur de l'infestation, <strong>ÉLIMINATION</strong> par des méthodes adaptées, <strong>CONTRÔLE</strong> de l'efficacité, et <strong>PRÉVENTION</strong> pour éviter les récidives (colmatage des accès, conseils d'hygiène).</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>6. Quelles méthodes utilisez-vous pour la dératisation ?</h4>
-                <p>Nous proposons des solutions <strong>chimiques</strong> grâce à des produits biocides professionnels et des <strong>solutions alternatives</strong> par des systèmes mécaniques (pièges, tapettes) avec ou sans placébos. Notre spécialité est dans la régulation par tir d'une population d'un entrepôt, mais également du traitement par tir d'un ou deux individus dans un local précis. Nous sommes attentifs à votre environnement et à vos spécificités, sans oublier l'herméticité des locaux.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>7. Les produits utilisés sont-ils dangereux pour mes animaux domestiques ?</h4>
-                <p>Nous prenons toutes les précautions nécessaires pour protéger vos animaux domestiques. Les produits sont placés dans des postes d'appâtage sécurisés, inaccessibles aux chiens et chats. Nous privilégions les méthodes mécaniques quand des animaux sont présents.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>8. Combien de temps faut-il pour éliminer une infestation de rats ?</h4>
-                <p>La durée varie selon l'ampleur de l'infestation. Une intervention légère peut être résolue en 1-2 semaines, tandis qu'une infestation importante peut nécessiter 4 à 6 semaines avec plusieurs passages de contrôle et de réappâtage.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>9. Comment prévenir le retour des rongeurs ?</h4>
-                <p>La prévention passe par plusieurs mesures : colmater les <strong>points d'entrée</strong> (trous, fissures), gérer correctement les <strong>déchets</strong>, éliminer les sources de nourriture accessibles, contrôler l'humidité, et maintenir une bonne hygiène. Nous vous conseillons sur toutes ces mesures.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>10. La dératisation est-elle obligatoire ?</h4>
-                <p>Oui, dans certains cas. La réglementation impose une obligation de dératisation pour les établissements recevant du public (ERP), les commerces alimentaires, les restaurants, et certaines industries. Le non-respect peut entraîner des sanctions. Nous vous aidons à rester conforme.</p>
-            </div>
-
-            <div class="faq-item">
-                <h4>11. Quelle est votre zone d'intervention pour une dératisation ?</h4>
-                <p>Nous pouvons intervenir dans toute la Charente maritime, mais nos principaux chantiers ne dépassent pas 30 à 40 Km autour de Pons. Jonzac, Saintes, Cognac, Mirambeau, St Genis de Saintonge, Gémozac, St Jean d'Angély...</p>
-            </div>
+            {% endfor %}
 
             <div class="service-cta">
                 <h3>PROXIMITE – REACTIVITE – EFFICACITE</h3>

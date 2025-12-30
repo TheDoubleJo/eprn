@@ -55,3 +55,66 @@ collections:
               - {label: "Longitude", name: "lng", widget: "number", value_type: "float", step: 0.0001, min: -180, max: 180, hint: "Coordonnée GPS longitude (-180 à 180)"}
               - {label: "Type d'intervention", name: "type", widget: "select", options: ["pigeons", "ragondins", "rongeurs"]}
               - {label: "Nombre d'interventions", name: "count", widget: "number", value_type: "int", min: 1, default: 1}
+
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - label: "FAQ Dératisation"
+        name: "faq-deratisation"
+        file: "faq-deratisation.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Questions et Réponses"
+            name: "faq_items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
+
+      - label: "FAQ Désinfection"
+        name: "faq-desinfection"
+        file: "faq-desinfection.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Questions et Réponses"
+            name: "faq_items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
+
+      - label: "FAQ Désinsectisation"
+        name: "faq-desinsectisation"
+        file: "faq-desinsectisation.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Questions et Réponses"
+            name: "faq_items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
+
+      - label: "FAQ Traitement par Tir"
+        name: "faq-traitement-tir"
+        file: "faq-traitement-tir.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Questions et Réponses"
+            name: "faq_items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
