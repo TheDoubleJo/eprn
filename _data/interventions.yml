@@ -154,3 +154,8 @@ interventions:
     lng: 2.4836
     type: rongeurs
     count: 1
+  - city: St Jean d'Angély
+    lat: 45.93784
+    lng: 0.51104
+    type: pigeons
+    count: 1
