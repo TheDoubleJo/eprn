@@ -156,6 +156,6 @@ interventions:
     count: 1
   - city: St Jean d'Angély
     lat: 45.93784
-    lng: 0.51104
+    lng: -0.51099
     type: pigeons
     count: 1
