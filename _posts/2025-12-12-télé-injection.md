@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Télé injection
-description: Fléchage
+description: Fléchage vache et veau
 image: /images/uploads/7087_CH_19092010_108.jpg
-date: 2025-12-09 10:29:00 +0100
+date: 2025-12-08 10:47:00 +0100
 ---
 Le 08/12/2025 à Val de livenne, 33820 de Monsieur Guillorit Christophe
 
