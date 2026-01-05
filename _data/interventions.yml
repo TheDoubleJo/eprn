@@ -164,3 +164,8 @@ interventions:
     lng: 0.519
     type: pigeons
     count: 1
+  - city: Pons
+    lat: 45.5833
+    lng: 0.55
+    type: pigeons
+    count: 5
