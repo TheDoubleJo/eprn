@@ -149,13 +149,18 @@ interventions:
     lng: 2.8203
     type: rongeurs
     count: 2
+  - city: St Jean d'Angély
+    lat: 45.93784
+    lng: -0.51099
+    type: pigeons
+    count: 1
   - city: Rosny-sous-Bois
     lat: 48.8697
     lng: 2.4836
     type: rongeurs
     count: 1
-  - city: St Jean d'Angély
-    lat: 45.93784
-    lng: -0.51099
+  - city: Saint Jean d'Angély
+    lat: 45.946
+    lng: 0.519
     type: pigeons
     count: 1
