@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Depigeonnisation
-description: Traitement par tir et démontage des nids intérieurs
+description: Traitement par tir sanitaire et démontage des nids intérieurs
 image: /images/uploads/Démontage nid.jpg
 date: 2026-01-04 11:07:00 +0100
 ---
