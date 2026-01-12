@@ -164,3 +164,8 @@ interventions:
     lng: -0.55
     type: pigeons
     count: 5
+  - city: Oullins Pierre Bénite
+    lat: 45.700145
+    lng: 4.835487
+    type: pigeons
+    count: 3
