@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dépigeonnisation
-description: Intérieur Entrepôt
+description: Présence sous les auvents et à l'intérieur des Entrepôts
 image: /images/uploads/Entrée.jpg
 date: 2026-01-12 15:26:00 +0100
 ---
