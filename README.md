@@ -12,6 +12,37 @@ Site web statique reproduit depuis [eprn.fr](https://eprn.fr/) pour hébergement
 - `script.js` - JavaScript interactions
 - `images/` - Dossier pour les images
 
+## Développement local
+
+### Prérequis
+
+- Ruby 3.2 (recommandé pour compatibilité avec GitHub Pages)
+  ```bash
+  winget install RubyInstallerTeam.RubyWithDevKit.3.2
+  ```
+
+### Installation
+
+```bash
+gem install bundler
+bundle install
+```
+
+### Lancer le serveur local
+
+```bash
+bundle exec jekyll serve
+```
+
+Le site est accessible sur http://localhost:4000
+
+### Options utiles
+
+- `bundle exec jekyll serve --livereload` : recharge automatique du navigateur
+- `bundle exec jekyll serve --drafts` : affiche les brouillons
+
+**Note** : après modification de `_config.yml`, relancer le serveur.
+
 ## Déploiement GitHub Pages
 
 1. Activez GitHub Pages dans les paramètres du repository
