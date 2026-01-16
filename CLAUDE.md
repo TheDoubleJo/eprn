@@ -97,9 +97,9 @@ The site uses Jekyll collections for structured content:
 
 The site includes a modern, lightweight content management system accessible at `/admin/`:
 - **CMS**: Sveltia CMS (modern successor to Netlify/Decap CMS)
-- **Backend**: GitHub (commits directly to the repository)
+- **Backend**: GitHub (commits directly to `TheDoubleJo/eprn` repository on `main` branch)
 - **Authentication**: GitHub Personal Access Token (no OAuth server needed)
-- **Content type**: Blog posts in `_posts/` folder
+- **Content types**: Blog posts (`_posts/`), Services (`_services/`), Intervention map data (`_data/interventions.yml`), FAQ pages
 - **Media storage**: `images/uploads/`
 - **Configuration**: `admin/config.yml`
 
@@ -110,9 +110,11 @@ The site includes a modern, lightweight content management system accessible at 
 - No need for Netlify services or OAuth server
 - Active maintenance (bugs fixed within 24h typically)
 
-**CMS fields for blog posts:**
-- Title, description, image, date, body (markdown)
-- Slug format: `YYYY-MM-DD-slug`
+**CMS Collections:**
+1. **Actualités (Blog posts)**: Title, description, image, date, body (markdown). Slug format: `YYYY-MM-DD-slug`. Creates files in `_posts/`
+2. **Services**: Edit existing service pages (create disabled). Fields: title, description, keywords, image, service_type, heading, body, FAQ link settings
+3. **Carte des Interventions**: Manage intervention map data. Fields: city, lat/lng, type (pigeons/ragondins/rongeurs), count
+4. **FAQ**: Edit FAQ pages for each service type (dératisation, désinfection, désinsectisation, traitement par tir). Each FAQ has a list of question/answer pairs
 
 **User Guide:** See `GUIDE_CMS.md` for detailed instructions on how to create a GitHub token and use the CMS (designed for non-technical users).
 
@@ -121,20 +123,20 @@ The site includes a modern, lightweight content management system accessible at 
 ### Local Development
 
 ```bash
-# Install Jekyll and dependencies (first time only)
-gem install bundler jekyll
-
-# Create a Gemfile if needed
-bundle init
-bundle add jekyll
-bundle add jekyll-seo-tag
-bundle add jekyll-sitemap
+# Install dependencies (first time only)
+# The Gemfile already exists with all required gems
+bundle install
 
 # Serve the site locally with live reload
 bundle exec jekyll serve
 
-# Access at http://localhost:4000/eprn
+# Access at http://localhost:4000
+# Note: baseurl is empty, so site runs at root, not /eprn
 ```
+
+**Windows-specific notes:**
+- The Gemfile includes Windows-specific gems (`tzinfo`, `tzinfo-data`, `wdm`)
+- These are automatically used on Windows platforms
 
 ### Building
 
@@ -205,7 +207,7 @@ The site includes comprehensive SEO optimization in `_layouts/default.html`:
 ### Adding a Blog Post
 
 **Via Sveltia CMS (recommended for non-technical users):**
-1. Navigate to `/admin/` (https://thedoublejo.github.io/eprn/admin/)
+1. Navigate to `/admin/` (https://eprn.fr/admin/)
 2. Authenticate with GitHub Personal Access Token (first time only)
 3. Click "Actualités" → "New Actualités"
 4. Fill in title, description, image, date, and content
@@ -232,8 +234,9 @@ date: YYYY-MM-DD HH:MM:SS +0100
 ### Modifying Page Templates
 
 **Layouts** (`_layouts/`):
-- `default.html`: Main template for all pages
+- `default.html`: Main template for all pages (includes SEO metadata, Schema.org structured data)
 - `post.html`: Template for blog posts (extends default)
+- `service.html`: Template for service detail pages (extends default, includes Schema.org Service markup)
 
 **Includes** (`_includes/`):
 - `header.html`: Site header and navigation
@@ -241,18 +244,30 @@ date: YYYY-MM-DD HH:MM:SS +0100
 
 ### Editing Service Pages
 
-Service pages (desinfection.html, etc.) are static HTML files with:
-- YAML front matter for title and description
-- HTML content in the body
-- Links to images in `images/` directory
-- Use `{{ site.baseurl }}` for all internal links and assets
+Service pages are now **markdown files** in the `_services/` collection:
+- Located in `_services/` directory (e.g., `desinfection.md`, `deratisation.md`)
+- YAML front matter includes: title, description, keywords, image, service_type, optional heading, FAQ link settings
+- Content written in markdown
+- Rendered using `_layouts/service.html` template
+- Can be edited via Sveltia CMS under "Services" collection
+- Permalink structure: `/:name.html` (e.g., desinfection.md → /desinfection.html)
+
+### Managing the Intervention Map
+
+The site includes an interactive map showing past interventions (`carte-interventions.html`):
+- Data stored in `_data/interventions.yml`
+- Each entry has: city, lat/lng coordinates, type (pigeons/ragondins/rongeurs), count
+- Editable via Sveltia CMS under "Carte des Interventions"
+- Map uses Leaflet.js for rendering
+- Different marker icons/colors for different intervention types
 
 ### Path Handling
 
-**Critical**: Always use `{{ site.baseurl }}` for internal links and assets:
-- Correct: `{{ site.baseurl }}/images/logo.png`
-- Correct: `{{ site.baseurl }}/contact.html`
-- Wrong: `/images/logo.png` (breaks on GitHub Pages)
+**Important**: `site.baseurl` is **empty** for this site (custom domain at root):
+- In templates: Use `{{ site.baseurl }}/path` or just `/path` (both work since baseurl is empty)
+- The site is deployed at `https://eprn.fr` (not a subdirectory)
+- For portability, continue using `{{ site.baseurl }}` prefix in templates in case baseurl changes
+- Examples: `{{ site.baseurl }}/images/logo.png`, `{{ site.baseurl }}/contact.html`
 
 ### Data Consistency
 
@@ -273,10 +288,12 @@ Contact information appears in multiple locations and must stay synchronized:
 The site deploys automatically via GitHub Pages:
 1. Push to `main` branch
 2. GitHub Pages builds with Jekyll
-3. Site is published at `https://thedoublejo.github.io/eprn`
+3. Site is published at `https://eprn.fr` (custom domain)
 
 **Settings:**
+- Repository: `TheDoubleJo/eprn`
 - Source: Deploy from branch `main`, folder `/root`
+- Custom domain: `eprn.fr`
 - Jekyll builds automatically (no manual build step needed)
 - Build time: ~1-2 minutes
 
