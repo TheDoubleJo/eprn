@@ -13,26 +13,36 @@ EPRN (Entreprise Pontoise de Régulation des Nuisibles) is a Jekyll-based static
 This site uses Jekyll to generate static pages from templates and markdown content. Jekyll configuration is in `_config.yml`.
 
 **Key Configuration:**
-- Base URL: `/eprn`
-- Site URL: `https://thedoublejo.github.io`
+- Base URL: `` (empty string - site is at custom domain root)
+- Site URL: `https://eprn.fr`
 - Markdown renderer: kramdown
 - Plugins: `jekyll-seo-tag`, `jekyll-sitemap`
 - Default layout: `default` for all pages
+- Jekyll version: `~> 3.9` (specified in Gemfile)
 
 ### Directory Structure
 
 ```
 eprn/
 ├── _config.yml              # Jekyll configuration
+├── Gemfile                  # Ruby gem dependencies
 ├── _layouts/                # Page templates
 │   ├── default.html         # Main layout with header/footer
-│   └── post.html            # Blog post layout
+│   ├── post.html            # Blog post layout
+│   └── service.html         # Service detail page layout
 ├── _includes/               # Reusable components
 │   ├── header.html          # Site header with navigation
 │   └── footer.html          # Site footer
+├── _services/               # Service pages (markdown collection)
+│   ├── desinfection.md
+│   ├── desinsectisation.md
+│   ├── deratisation.md
+│   └── traitement-tir.md
 ├── _posts/                  # Blog posts (markdown)
 │   └── YYYY-MM-DD-slug.md   # Posts follow Jekyll naming convention
-├── admin/                   # Decap CMS admin interface
+├── _data/                   # Data files
+│   └── interventions.yml    # Map intervention data
+├── admin/                   # Sveltia CMS admin interface
 │   ├── config.yml           # CMS configuration
 │   └── index.html           # CMS entry point
 ├── images/                  # Image assets
@@ -40,11 +50,12 @@ eprn/
 ├── index.html               # Homepage (uses Liquid templating)
 ├── actualites.html          # Blog listing page
 ├── contact.html             # Contact page
-├── Service pages            # Static service description pages
-│   ├── desinfection.html
-│   ├── desinsectisation.html
-│   ├── deratisation.html
-│   └── traitement-tir.html
+├── carte-interventions.html # Interactive intervention map
+├── FAQ pages                # Service-specific FAQ pages
+│   ├── faq-desinfection.html
+│   ├── faq-desinsectisation.html
+│   ├── faq-deratisation.html
+│   └── faq-traitement-tir.html
 ├── Legal pages              # Legal and info pages
 │   ├── mentions-legales.html
 │   ├── politique-confidentialite.html
@@ -58,9 +69,29 @@ eprn/
 
 Pages use **Liquid templating** (Jekyll's template language):
 - Variables: `{{ site.baseurl }}`, `{{ page.title }}`, `{{ content }}`
-- Loops: `{% for post in site.posts %}`
+- Loops: `{% for post in site.posts %}`, `{% for service in site.services %}`
 - Includes: `{% include header.html %}`
 - Front matter: YAML metadata at the top of files between `---` delimiters
+
+### Jekyll Collections
+
+The site uses Jekyll collections for structured content:
+
+**Services Collection (`_services/`):**
+- Configured in `_config.yml` with `output: true`
+- Permalink: `/:name.html` (e.g., desinfection.md → /desinfection.html)
+- Layout: `service` (specified in defaults)
+- Each service has: title, description, keywords (for SEO), image, service_type, optional heading, markdown body
+- Services can link to their own FAQ pages via front matter: `show_faq_link`, `faq_url`, `faq_link_text`
+
+**Posts Collection (`_posts/`):**
+- Standard Jekyll blog posts for news/updates
+- Layout: `post`
+- Front matter includes: title, description, image, date
+
+**Data Files (`_data/`):**
+- `interventions.yml`: Geographic data for the intervention map (carte-interventions.html)
+- Format: city, lat/lng coordinates, intervention type (pigeons/ragondins/rongeurs), count
 
 ### Sveltia CMS Integration
 
