@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
-gem "kramdown-parser-gfm"
+# GitHub Pages gem (includes Jekyll and all compatible plugins)
+gem "github-pages", group: :jekyll_plugins
 
 # Windows-specific
 platforms :mingw, :x64_mingw, :mswin, :jruby do
