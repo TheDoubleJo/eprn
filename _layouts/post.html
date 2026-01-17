@@ -19,6 +19,22 @@ layout: default
                 style="width: 100%; border-radius: 10px; margin-bottom: 2rem;">
             {% endif %}
 
+            {% if page.youtube_url %}
+            {% assign youtube_id = page.youtube_url | split: "v=" | last | split: "&" | first %}
+            {% if page.youtube_url contains "youtu.be" %}
+                {% assign youtube_id = page.youtube_url | split: "youtu.be/" | last | split: "?" | first %}
+            {% endif %}
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/{{ youtube_id }}"
+                    title="{{ page.title }}"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            {% endif %}
+
             <div class="post-content">
                 {{ content }}
             </div>
