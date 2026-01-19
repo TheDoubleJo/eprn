@@ -174,3 +174,8 @@ interventions:
     lng: 5.1936
     type: rongeurs
     count: 1
+  - city: Mions
+    lat: 45.6768
+    lng: 4.9647
+    type: pigeons
+    count: 1
