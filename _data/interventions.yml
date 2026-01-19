@@ -169,3 +169,8 @@ interventions:
     lng: 4.835487
     type: pigeons
     count: 3
+  - city: Ensues la Redonne
+    lat: 43.3795
+    lng: 5.1936
+    type: rongeurs
+    count: 1
