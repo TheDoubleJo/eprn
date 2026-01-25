@@ -3,7 +3,7 @@ layout: post
 title: Télé injection
 description: Nino 2ème épisode
 image: /images/uploads/Nino_2.jpg
-youtube_url: https://youtu.be/Mjh1jWN2L2g
+youtube_url: https://youtu.be/lz9wlorbNWU
 date: 2026-01-23 14:55:00 +0100
 ---
 
