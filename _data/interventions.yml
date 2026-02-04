@@ -179,3 +179,8 @@ interventions:
     lng: 4.835487
     type: pigeons
     count: 3
+  - city: Le Thor
+    lat: 43.96703
+    lng: 4.9789
+    type: pigeons
+    count: 1
