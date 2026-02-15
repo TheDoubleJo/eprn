@@ -1,8 +1,10 @@
 ---
 layout: post
-title: Dépigeonnisation
+title: Dépigeonnisation / Dépigeonnage
 description: Présence sous les auvents et à l'intérieur des Entrepôts
 image: /images/uploads/Entrée.jpg
+youtube_url: ''
 date: 2026-01-12 15:26:00 +0100
 ---
+
 Les pigeons profitaient de l'ouverture des portes, pour s'installer et détruire l'isolation, engendrant des dégâts importants.
