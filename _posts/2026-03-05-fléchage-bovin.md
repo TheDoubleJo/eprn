@@ -7,4 +7,4 @@ youtube_url: https://youtu.be/CQW-1hhzXwc
 date: 2026-03-05 16:14:00 +0100
 ---
 
-Marguerite est venue tranquillement manger du pain donné par les collaborateurs de la SCEA des monts. Le fléchage, le maintiend avec une corde et la mise en sécurité dans la bétaillère n'ont duré qu'une heure.
+Marguerite est venue tranquillement manger du pain donné par les collaborateurs de la SCEA des monts. Le fléchage, le maintien avec une corde et la mise en sécurité dans la bétaillère n'ont duré qu'une heure.
