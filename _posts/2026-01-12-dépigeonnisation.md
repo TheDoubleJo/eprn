@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dépigeonnisation / Dépigeonnage
+title: Dépigeonnage
 description: Présence sous les auvents et à l'intérieur des Entrepôts
 image: /images/uploads/Entrée.jpg
 youtube_url: ''
