@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Télé injection
+title: Fléchage
 description: Fléchage vache et veau
 image: /images/uploads/7087_CH_19092010_108.jpg
+youtube_url: ''
 date: 2025-12-08 10:47:00 +0100
 ---
+
 Le 08/12/2025 à Val de livenne, 33820 de Monsieur Guillorit Christophe
 
 "Monsieur Audouin, est venu flécher ma vache et son veau ce matin, c'est une personne calme et sérieuse, son travail a était très satisfaisant, si je dois avoir l'occasion de faire re flécher une bête, je n'hésiterai pas à la recontacter."
