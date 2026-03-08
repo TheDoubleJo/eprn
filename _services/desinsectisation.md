@@ -1,14 +1,14 @@
 ---
 layout: service
-title: "Désinsectisation en Charente-Maritime - EPRN Pons"
-description: "Service professionnel de désinsectisation en Charente-Maritime. Élimination de tous insectes rampants, volants et piquants. Approche éthique et écologique. Devis gratuit."
-keywords: "désinsectisation, insectes, cafards, punaises de lit, guêpes, frelons, Charente-Maritime, Pons, EPRN"
-image: "/images/desinsectisation.jpg"
-service_type: "Désinsectisation"
-heading: "INSPECTION – TRAITEMENT SUR MESURE – CONTROLE – PREVENTION"
+title: Désinsectisation en Charente-Maritime - EPRN Pons
+description: Service professionnel de désinsectisation en Charente-Maritime. Élimination de tous insectes rampants, volants et piquants. Approche éthique et écologique. Devis gratuit.
+keywords: désinsectisation, insectes, cafards, punaises de lit, guêpes, frelons, Charente-Maritime, Pons, EPRN
+image: /images/uploads/LOGO-EPRN-2025_bis.jpg
+service_type: Désinsectisation
+heading: INSPECTION – TRAITEMENT SUR MESURE – CONTROLE – PREVENTION
 show_faq_link: true
-faq_url: "/faq-desinsectisation.html"
-faq_link_text: "Questions fréquentes sur la désinsectisation"
+faq_url: /faq-desinsectisation.html
+faq_link_text: Questions fréquentes sur la désinsectisation
 ---
 
 **Contre :** Tous insectes rampants, volants et piquants
