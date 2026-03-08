@@ -1,14 +1,14 @@
 ---
 layout: service
-title: "Désinfection Microbienne en Charente-Maritime - EPRN Pons"
-description: "Service professionnel de désinfection microbienne en Charente-Maritime. Nébulisation, pulvérisation, fumigation contre bactéries, virus et champignons. Certificat agréé ministère de la santé."
-keywords: "désinfection, désinfection microbienne, nébulisation, bactéries, virus, champignons, ehpad, Charente-Maritime, Pons, EPRN"
-image: "/images/Desinfection2.jpg"
-service_type: "Désinfection Microbienne"
-heading: ""
+title: Désinfection Microbienne en Charente-Maritime - EPRN Pons
+description: Service professionnel de désinfection microbienne en Charente-Maritime. Nébulisation, pulvérisation, fumigation contre bactéries, virus et champignons. Certificat agréé ministère de la santé.
+keywords: désinfection, désinfection microbienne, nébulisation, bactéries, virus, champignons, ehpad, Charente-Maritime, Pons, EPRN
+image: /images/uploads/LOGO-EPRN-2025_bis.jpg
+service_type: Désinfection Microbienne
+heading: ''
 show_faq_link: true
-faq_url: "/faq-desinfection.html"
-faq_link_text: "Questions fréquentes sur la désinfection"
+faq_url: /faq-desinfection.html
+faq_link_text: Questions fréquentes sur la désinfection
 ---
 
 **Pour :** du matériel médical, une chambre d'ehpad, un véhicule, une cuisine, un bac à sable, des bâtiments d'élevage, industrie alimentaire…
