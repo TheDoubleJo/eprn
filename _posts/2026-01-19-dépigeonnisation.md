@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dépigeonnisation / Dépigeonnage
+title: Dépigeonnage
 description: |-
   Présence dans l'entrepôt et sous les auvents extérieurs.
   Problème réglé en 1h.
