@@ -2,9 +2,11 @@
 layout: post
 title: Bienvenue sur notre nouveau blog
 description: Ceci est le premier article de notre blog. Retrouvez ici nos conseils et actualités.
-image: /images/uploads/Carte de visite recto jpeg.jpg
+image: /images/uploads/LOGO-EPRN-2025_bis.jpg
+youtube_url: ''
 date: 2025-12-07 12:00:00 +0100
 ---
+
 Bienvenue sur le nouveau site d'EPRN !
 
 Nous avons mis en place ce blog pour vous partager régulièrement :
