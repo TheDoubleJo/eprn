@@ -184,3 +184,8 @@ interventions:
     lng: 4.9789
     type: pigeons
     count: 1
+  - city: La garde
+    lat: 43.1344
+    lng: 6.02942
+    type: pigeons
+    count: 1
