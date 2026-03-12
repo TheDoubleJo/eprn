@@ -3,7 +3,7 @@ layout: post
 title: Dépigeonnage
 description: Petite colonie de pigeons nichant à proximité,  elle venait se ravitailler tous les matins dans ce commerce. Une intervention par tir de très bonne heure à résolu le problème et les collaborateurs n'auront plus à nettoyer les fientes.
 image: /images/uploads/Présence dans fournil.jpg
-youtube_url: https://youtube.com/playlist?list=PLne0BT0WUlq7qQdyfoE2HrGtm7sUfME7_&si=ipWQFfj_T0cNx9XM
+youtube_url: ''
 date: 2026-03-10 09:26:00 +0100
 ---
 
