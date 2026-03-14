@@ -3,7 +3,7 @@ layout: post
 title: Fléchage sanglier domestiqué
 description: Fléchage de "BABE", vieux sanglier domestiqué, sur lequel il était nécessaire d'effectuer des soins dentaires.
 image: /images/uploads/Fléchage Babe.jpg
-youtube_url: https://youtube.com/shorts/as7QMQxAOZc
+youtube_url: https://youtu.be/as7QMQxAOZc?si=7xksFjEsBNBNw6Ut
 date: 2026-03-13 18:25:00 +0100
 ---
 
