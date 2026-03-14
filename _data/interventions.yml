@@ -190,7 +190,7 @@ interventions:
     type: pigeons
     count: 1
   - city: Opio
-    lat: 46.646
+    lat: 43.646
     lng: 6.976
     type: pigeons
     count: 1
