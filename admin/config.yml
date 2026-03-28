@@ -7,6 +7,21 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Page d'accueil"
+        name: "index"
+        file: "index.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string", hint: "Titre affiché dans l'onglet du navigateur et pour le SEO"}
+          - {label: "Description", name: "description", widget: "text", hint: "Description pour le référencement Google"}
+          - {label: "Titre principal", name: "hero_title", widget: "string", hint: "Grand titre affiché en haut de la page d'accueil"}
+          - {label: "Paragraphe 1", name: "hero_para1", widget: "text", hint: "Premier paragraphe de présentation"}
+          - {label: "Paragraphe 2", name: "hero_para2", widget: "text", hint: "Deuxième paragraphe (mission)"}
+          - {label: "Paragraphe 3", name: "hero_para3", widget: "text", hint: "Troisième paragraphe (clientèle et zone d'intervention)"}
+
   - name: "blog"
     label: "Actualités"
     folder: "_posts"
