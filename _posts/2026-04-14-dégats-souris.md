@@ -3,7 +3,7 @@ layout: post
 title: Dégats Souris
 description: Un sac de croquettes pour chien attaqué par des souris
 image: /images/uploads/Sac de croquettes attaquée par des souris.jpg
-youtube_url: https://youtube.com/playlist?list=PLne0BT0WUlq64lQg_Z8N0L_xzQ-LRBdd_&si=ENhTTVp0dBwZJRft
+youtube_url: https://youtu.be/HEkwjYip1eA?si=ehFfsIdF-YE9Ios-
 date: 2026-04-14 14:48:00 +0200
 ---
 
