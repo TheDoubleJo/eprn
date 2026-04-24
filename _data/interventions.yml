@@ -195,7 +195,7 @@ interventions:
     type: pigeons
     count: 2
   - city: Strasbourg
-    lat: 45.537
-    lng: 0.499
+    lat: 48.34
+    lng: 7.45
     type: pigeons
     count: 1
