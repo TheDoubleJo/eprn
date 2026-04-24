@@ -3,7 +3,7 @@ layout: post
 title: Abreuvoir improvisé
 description: Les pigeons profitent d'une défaillance d'un climatiseur pour venir boire.
 image: /images/uploads/Clim.jpg
-youtube_url: https://youtube.com/shorts/1khWsjW-7Rs
+youtube_url: https://youtu.be/1khWsjW-7Rs?si=N52xcZ8C5lUrgeIK
 date: 2026-04-24 10:58:00 +0200
 ---
 
