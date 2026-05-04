@@ -3,7 +3,7 @@ layout: service
 title: Dératisation Professionnelle en Charente-Maritime - EPRN Pons
 description: Service professionnel de dératisation en Charente-Maritime. Élimination rats, souris, campagnols. Solutions chimiques et alternatives écologiques. Diagnostic gratuit au 06 06 40 07 79.
 keywords: dératisation, rats, souris, rongeurs, campagnols, surmulots, Charente-Maritime, Pons, EPRN
-image: /images/uploads/LOGO-EPRN-2025_bis.jpg
+image: /images/uploads/Logo EPRN 2026.jpg
 service_type: Dératisation
 heading: DIAGNOSTIC – ELIMINATION – CONTROLE – PREVENTION
 show_faq_link: true
