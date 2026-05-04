@@ -204,3 +204,13 @@ interventions:
     lng: 5.8
     type: pigeons
     count: 1
+  - city: La Seyne sur mer
+    lat: 43.1
+    lng: 5.85
+    type: pigeons
+    count: 1
+  - city: Le Cannet
+    lat: 43.56
+    lng: 6.96
+    type: pigeons
+    count: 1
