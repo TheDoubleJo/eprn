@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Abreuvoir improvisé
+title: Abreuvoir improvisé, dépigeonnage par tir
 description: Les pigeons profitent d'une défaillance d'un climatiseur pour venir boire.
 image: /images/uploads/Clim.jpg
 youtube_url: https://youtu.be/1khWsjW-7Rs?si=N52xcZ8C5lUrgeIK
