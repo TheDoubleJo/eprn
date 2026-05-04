@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Squatteurs d'église à Pérignac 17800
+title: Squatteurs d'église à Pérignac 17800, dépigeonnage par tir
 description: |-
   Encore une commune dont la population de pigeons devenait ingérable. Eglise, école, maisons du centre ville étaient impactées par cette présence quotidienne et les nuisances liées.
   Le traitement par tir de 102 pigeons en une soirée a permis d'obtenir une situation acceptable.
