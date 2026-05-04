@@ -199,3 +199,8 @@ interventions:
     lng: 7.45
     type: pigeons
     count: 1
+  - city: Sanary sur mer
+    lat: 43.12
+    lng: 5.8
+    type: pigeons
+    count: 1
