@@ -134,3 +134,18 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Réponse", name: "answer", widget: "markdown"}
+
+      - label: "FAQ Dépigeonnage"
+        name: "faq-depigeonnage"
+        file: "faq-depigeonnage.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
+          - {label: "Titre de la page", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Questions et Réponses"
+            name: "faq_items"
+            widget: "list"
+            summary: "{{fields.question}}"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Réponse", name: "answer", widget: "markdown"}
