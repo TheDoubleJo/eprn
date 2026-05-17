@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conséquences d'un nourrissage des pigeons
+title: Conséquences d'un nourrissage sauvage des pigeons
 description: Les pigeons stationnent sur la pelouse devant la gare de Strasbourg, en attendant qu'on vienne les nourrir.
 image: /images/uploads/Pigeons gare.jpg
 youtube_url: https://youtu.be/-L2lG0RVo0M?si=FdHai0vAAc3nWPIR
