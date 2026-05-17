@@ -1,8 +1,8 @@
 ---
 layout: service
-title: Traitement Sanitaire par Tir - Régulation Faune en Charente-Maritime - EPRN
-description: Service professionnel de traitement par tir létal et non létal en Charente-Maritime. Dépigeonnage, régulation de la faune sauvage. Intervention rapide et discrète. Devis gratuit.
-keywords: traitement par tir, dépigeonnage, régulation faune, tir létal, tir non létal, pigeons, Charente-Maritime, Pons, EPRN
+title: Traitement Sanitaire par Tir - Régulation Faune en France - EPRN
+description: Service professionnel de traitement par tir létal et non létal en France. Dépigeonnage, régulation de la faune sauvage. Intervention rapide et discrète. Devis gratuit.
+keywords: traitement par tir, dépigeonnage, régulation faune, tir létal, tir non létal, pigeons, France, Charente-Maritime, Pons, EPRN
 image: /images/uploads/Logo EPRN 2026.jpg
 service_type: Traitement Sanitaire par Tir
 heading: ''
