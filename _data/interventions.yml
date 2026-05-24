@@ -214,3 +214,8 @@ interventions:
     lng: 6.96
     type: pigeons
     count: 1
+  - city: Bondoufle
+    lat: 48.617
+    lng: 2.394
+    type: rongeurs
+    count: 1
