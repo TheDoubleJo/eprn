@@ -219,3 +219,8 @@ interventions:
     lng: 2.394
     type: rongeurs
     count: 1
+  - city: Lomme
+    lat: 50.646
+    lng: 3.009
+    type: pigeons
+    count: 1
