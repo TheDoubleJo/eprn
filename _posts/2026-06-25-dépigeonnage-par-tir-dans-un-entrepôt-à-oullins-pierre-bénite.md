@@ -7,4 +7,6 @@ youtube_url: ''
 date: 2026-06-25 07:44:00 +0200
 ---
 
-Une bonne herméticité des batiments éviterait que des indésirables s'installent.
+Une bonne herméticité des batiments éviterait que des indésirables s'installent. Evidemment reste la possibilité de rentrer par les portes, mais les rotations de camions limitent les intrusions.
+
+Ne pas attendre que les couples se forment......
