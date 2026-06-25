@@ -3,7 +3,7 @@ interventions:
     lat: 45.764
     lng: 4.8357
     type: pigeons
-    count: 3
+    count: 4
   - city: Marseille
     lat: 43.2965
     lng: 5.3698
@@ -193,7 +193,7 @@ interventions:
     lat: 43.646
     lng: 6.976
     type: pigeons
-    count: 2
+    count: 3
   - city: Strasbourg
     lat: 48.34
     lng: 7.45
