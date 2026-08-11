@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Local Biocides
-description: L'entreprise vient de se doter d'un local incluant les nouvelles normes dédiées au stockage des produits biocides. Clim, chauffage, douches, vestiaires etc.......
+description: L'entreprise vient d'inaugurer son nouveau local, incluant les nouvelles normes dédiées au stockage des produits biocides. Clim, chauffage, douches, vestiaires etc.......
 image: /images/uploads/Flag EPRN.jpg
 youtube_url: ''
 date: 2026-07-27 21:37:00 +0200
