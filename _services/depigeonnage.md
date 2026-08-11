@@ -1,7 +1,7 @@
 ---
 layout: service
 title: Dépigeonnage et Éloignement des Pigeons en France - EPRN Pons
-description: Service professionnel de dépigeonnage et de protection contre les volatiles en France métropolitaone. Régulation par tir sanitaire. Diagnostic gratuit au 06 06 40 07 79.
+description: Service professionnel de dépigeonnage et de protection contre les volatiles en France métropolitaine. Régulation par tir sanitaire. Diagnostic gratuit au 06 06 40 07 79.
 keywords: dépigeonnage, pigeons, éloignement oiseaux, Charente-Maritime, France, Pons, EPRN
 image: /images/uploads/Logo EPRN 2026.jpg
 service_type: Dépigeonnage
