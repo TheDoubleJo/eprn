@@ -3,7 +3,7 @@ layout: post
 title: Fléchage génisse
 description: Après plusieurs semaines de liberté, "Agrume", petite génisse de race Limousine, à enfin retrouvée sa maitresse qui s'inquiétait de la savoir seule et sans repère.
 image: /images/uploads/Agrume et sa maitresse.jpg
-youtube_url: https://youtube.com/shorts/7WwTRwSonJI
+youtube_url: https://youtu.be/7WwTRwSonJI?si=Ok1lyXPtxMZoTV5P
 date: 2026-08-11 18:42:00 +0200
 ---
 
