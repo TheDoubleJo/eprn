@@ -3,7 +3,7 @@ layout: post
 title: Génisse endormie
 description: Agrume dort tranquillement devant son futur transport vers la stabulation
 image: /images/uploads/Agrume.jpg
-youtube_url: https://youtube.com/shorts/hzsYiJonkyk?feature=share
+youtube_url: https://youtu.be/hzsYiJonkyk?si=eAtYb-eSnZqY2dUL
 date: 2026-08-11 19:06:00 +0200
 ---
 
