@@ -224,3 +224,8 @@ interventions:
     lng: 3.009
     type: pigeons
     count: 1
+  - city: Saint Seurin sur l'Isle
+    lat: 45.014
+    lng: 0.022
+    type: ragondins
+    count: 1
