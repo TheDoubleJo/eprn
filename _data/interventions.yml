@@ -229,3 +229,8 @@ interventions:
     lng: 0.022
     type: pigeons
     count: 1
+  - city: Saint Raphaël
+    lat: 45.2532
+    lng: 6.4607
+    type: pigeons
+    count: 1
