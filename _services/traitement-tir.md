@@ -39,7 +39,7 @@ faq_link_text: Questions fréquentes sur le traitement par tir
 
 **Tir Létal :** Ce service est utilisé dans les cas où la population d'animaux indésirables est trop importante et représente un danger pour l'écosystème, pour la santé publique, pour la préservation des cultures ou la sécurité des personnes.
 
-**Tir Non Létal :** Pour les espèces échappées ou dangereuses, nous proposons, en collaboration avec les vétérinaires, des techniques non létales par télé injection avec fusil hypodermique, afin de les maîtriser sans stress et sans causer de dommages permanents.
+**Tir Non Létal :** Pour les espèces échappées ou dangereuses, nous proposons, en collaboration avec les vétérinaires, des techniques non létales par télé injection avec fusil hypodermique, afin de les maîtriser sans stress et sans causer de dommages permanents. Il nous semble importantd'avertir malgré tout, des risques prévisibles et imprévisibles encourus par ce procédé et les produits utilisés fournis par le vétérinaire, notamment l'effet myorelaxant pouvant provoquer un accouchement prématuré et tachycardie pouvant provoquer jusqu'à un arrêt respiratoire.
 
 ### Avantages de Nos Méthodes
 
