@@ -7,4 +7,4 @@ youtube_url: https://youtu.be/z_AUn9tsUa4?si=VkJHy1p0mY-a0XxT
 date: 2026-08-26 18:45:00 +0200
 ---
 
-Oui
+Habitués à recevoir de la nourriture, les pigeons se rapprochent de plus en plus des humains, stationnent en permanence près des lieux de nourrissage et perdent petit à petit l'instinct de recherche de subsistance dans la nature.
