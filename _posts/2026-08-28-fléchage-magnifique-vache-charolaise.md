@@ -7,4 +7,4 @@ youtube_url: https://youtu.be/b7ezSWf2UqI?si=ZSzEZBQ024w8ZyUP
 date: 2026-08-28 14:46:00 +0200
 ---
 
-Une flêche de 5ml, à suffit pour l'endormir raisonablement pour la sécuriser et la faire monter dans la bétaillère.
+Une flêche de 5ml, à suffit pour l'endormir raisonablement, pour la sécuriser puis la faire monter dans la bétaillère.
