@@ -234,3 +234,8 @@ interventions:
     lng: 6.769
     type: pigeons
     count: 1
+  - city: Cabestany
+    lat: 42.691
+    lng: 2.921
+    type: pigeons
+    count: 1
