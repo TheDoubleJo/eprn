@@ -3,7 +3,7 @@ layout: post
 title: Dortoir d'un colonie de pigeons sous un auvent d'une entreprise
 description: Tous les soirs ces pigeons s'installent et provoquent des nuisances pour les collaborateurs et les matériels. Pour les déloger seul le tir sanitaire est efficient.
 image: /images/uploads/Photo Pigeons sous auvent.JPG
-youtube_url: ''
+youtube_url: https://youtu.be/P5mP9S8zmZ8?si=LRnjHAq8o5o6H8tl
 date: 2026-09-25 19:23:00 +0200
 ---
 
