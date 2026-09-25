@@ -239,3 +239,13 @@ interventions:
     lng: 2.921
     type: pigeons
     count: 1
+  - city: La Talaudière
+    lat: 45.468
+    lng: 4.423
+    type: pigeons
+    count: 1
+  - city: Montluçon
+    lat: 46.341
+    lng: 2.603
+    type: pigeons
+    count: 1
