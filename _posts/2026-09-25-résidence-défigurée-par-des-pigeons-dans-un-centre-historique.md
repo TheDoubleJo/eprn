@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Résidence défigurée par des pigeons dans un centre historique
+title: Dépigeonnage d'une résidence défigurée par des pigeons dans un centre historique
 description: Après l'intervention, cette résidence est redevenue très très attractive pour son calme et sa situation privilégiée dans un centre historique
 image: /images/uploads/Après intervention EPRN.jpg
 youtube_url: https://youtu.be/de3euY1asPY?si=WHQh1LFBgNXeQsXS
