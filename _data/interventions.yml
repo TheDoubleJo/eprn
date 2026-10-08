@@ -249,3 +249,8 @@ interventions:
     lng: 2.603
     type: pigeons
     count: 1
+  - city: La Rochelle
+    lat: 46.159
+    lng: -1.151
+    type: pigeons
+    count: 1
