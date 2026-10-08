@@ -3,7 +3,7 @@ layout: post
 title: Dépigeonnage d'une Gare SNCF
 description: 'Au fil des années, la reproduction aidant, la colonie de pigeons est devenue monstrueuse, nécessitant d''employer la méthode aujourd''hui la plus efficace : "Le tir sanitaire"'
 image: /images/uploads/20260908_102959.jpg
-youtube_url: ''
+youtube_url: https://youtu.be/48HVfG05L_g?si=LOm0Q8SGNLT5BH98
 date: 2026-10-08 14:59:00 +0200
 ---
 
