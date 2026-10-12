@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fléchage magnifique vache Charolaise
+title: Fléchage d'une magnifique vache Charolaise
 description: Madame ne voulait pas quitter le marais de Saint just luzac et avait rejoint un troupeau voisin. Après plusieurs tentatives infructueuses, le GAEC la petite maison, a choisi l'option fléchage, qui lui a permis de récupérer son animal en moins d'une heure. Très beau travail d'équipe, merci aux frères et aux enfants.
 image: /images/uploads/Vache dans bétaillère.jpg
 youtube_url: https://youtu.be/b7ezSWf2UqI?si=ZSzEZBQ024w8ZyUP
