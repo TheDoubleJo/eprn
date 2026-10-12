@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fléchage Canin
+title: Fléchage Canin à 31420 Montoulieu Saint Bernard
 description: Fléchage d'une magnifique chienne croisée, très très craintive.
 image: /images/uploads/Chienne.jpg
 youtube_url: ''
