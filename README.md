@@ -17,11 +17,28 @@ Site web statique reproduit depuis [eprn.fr](https://eprn.fr/) pour hébergement
 ### Prérequis
 
 - Ruby 3.2 (recommandé pour compatibilité avec GitHub Pages)
+
+  Sous Linux (Debian/Ubuntu) :
+  ```bash
+  sudo apt install ruby-full build-essential zlib1g-dev
+  ```
+
+  Sous Windows (si retour sur cette plateforme) :
   ```bash
   winget install RubyInstallerTeam.RubyWithDevKit.3.2
   ```
 
 ### Installation
+
+**Important (Linux)** : le Ruby système de Debian/Ubuntu n'autorise pas `gem install` dans `/var/lib/gems`. Installer les gems dans votre dossier utilisateur en ajoutant ceci à `~/.bashrc` (déjà configuré sur la machine actuelle) :
+
+```bash
+export GEM_HOME="$HOME/.gem"
+export GEM_PATH="$HOME/.gem:/var/lib/gems/3.2.0"
+export PATH="$PATH:$HOME/.gem/bin"
+```
+
+Puis (après avoir rouvert le terminal ou fait `source ~/.bashrc`) :
 
 ```bash
 gem install bundler

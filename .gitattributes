@@ -1,0 +1,10 @@
+# Forcer LF dans le dépôt (normalisation multi-plateformes)
+* text=auto eol=lf
+
+# Fichiers binaires
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg -text
