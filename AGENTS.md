@@ -90,7 +90,7 @@ GUIDE_CMS.md            # Guide utilisateur du CMS (pour le client)
 
 **Data (`_data/interventions.yml`)** — carte des interventions :
 
-- Champs par entrée : `city`, `lat`, `lng`, `type` (pigeons/ragondins/rongeurs), `count`.
+- Champs par entrée : `city`, `lat`, `lng`, `type` (pigeons/ragondins/rongeurs/flechage), `count`.
 
 ## Layouts et includes
 

@@ -592,6 +592,10 @@ a.service-card {
     background-color: #764ba2;
 }
 
+.legend-marker-flechage {
+    background-color: #e74c3c;
+}
+
 .map-legend-note {
     text-align: center;
     font-size: 0.95rem;

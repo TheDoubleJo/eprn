@@ -6,7 +6,8 @@ const interventionsData = window.INTERVENTIONS_DATA || [];
 const markerColors = {
     pigeons: '#667eea',    // Violet/bleu (couleur principale du site)
     ragondins: '#ffd700',  // Or (couleur accent)
-    rongeurs: '#764ba2'    // Violet foncé
+    rongeurs: '#764ba2',   // Violet foncé
+    flechage: '#e74c3c'    // Rouge
 };
 
 // Initialiser la carte uniquement si l'élément existe
@@ -67,6 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Trois couleurs : dégradé en trois sections
             const colors = types.map(t => markerColors[t]);
             markerStyle = `background: linear-gradient(135deg, ${colors[0]} 33.33%, ${colors[1]} 33.33%, ${colors[1]} 66.66%, ${colors[2]} 66.66%);`;
+        } else if (types.length === 4) {
+            // Quatre couleurs : dégradé en quatre sections
+            const colors = types.map(t => markerColors[t]);
+            markerStyle = `background: linear-gradient(135deg, ${colors[0]} 25%, ${colors[1]} 25%, ${colors[1]} 50%, ${colors[2]} 50%, ${colors[2]} 75%, ${colors[3]} 75%);`;
         }
 
         // Créer une icône personnalisée
@@ -90,7 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const typeLabel = {
                 pigeons: 'Régulation par tir des pigeons',
                 ragondins: 'Régulation par tir des ragondins',
-                rongeurs: 'Régulation par tir de rongeurs'
+                rongeurs: 'Régulation par tir de rongeurs',
+                flechage: 'Fléchage'
             }[intervention.type];
 
             popupContent += `<li>${intervention.count} ${typeLabel}</li>`;
