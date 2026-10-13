@@ -294,3 +294,8 @@ interventions:
     lng: 0.681
     type: flechage
     count: 1
+  - city: Meursac
+    lat: 45.649
+    lng: -0.809
+    type: flechage
+    count: 1
