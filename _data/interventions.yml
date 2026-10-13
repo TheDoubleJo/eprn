@@ -309,3 +309,8 @@ interventions:
     lng: -0.359
     type: flechage
     count: 1
+  - city: Saint Bonnet sur Gironde
+    lat: 45.35
+    lng: -0.666
+    type: flechage
+    count: 1
