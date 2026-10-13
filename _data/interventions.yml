@@ -259,3 +259,8 @@ interventions:
     lng: 0.916
     type: flechage
     count: 1
+  - city: Saint Just Luzac
+    lat: 45.804
+    lng: -1.037
+    type: flechage
+    count: 1
