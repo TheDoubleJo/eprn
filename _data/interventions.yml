@@ -329,3 +329,8 @@ interventions:
     lng: 2.925
     type: flechage
     count: 1
+  - city: Le Douhet
+    lat: 45.82
+    lng: -0.569
+    type: flechage
+    count: 1
