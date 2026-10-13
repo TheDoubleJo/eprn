@@ -304,3 +304,8 @@ interventions:
     lng: -0.874
     type: flechage
     count: 1
+  - city: Saint Martin de Juillers
+    lat: 45.943
+    lng: -0.359
+    type: flechage
+    count: 1
