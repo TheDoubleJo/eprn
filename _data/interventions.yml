@@ -319,3 +319,8 @@ interventions:
     lng: -0.339
     type: flechage
     count: 1
+  - city: Cercoux
+    lat: 45.13
+    lng: -0.207
+    type: flechage
+    count: 1
