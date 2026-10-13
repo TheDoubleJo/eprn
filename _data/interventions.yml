@@ -314,3 +314,8 @@ interventions:
     lng: -0.666
     type: flechage
     count: 1
+  - city: Laruscade
+    lat: 45.108
+    lng: -0.339
+    type: flechage
+    count: 1
