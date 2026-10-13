@@ -291,7 +291,7 @@ interventions:
     count: 1
   - city: Port d'Envaux
     lat: 45.837
-    lng: 0.681
+    lng: -0.681
     type: flechage
     count: 1
   - city: Meursac
