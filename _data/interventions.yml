@@ -284,3 +284,8 @@ interventions:
     lng: -0.55
     type: flechage
     count: 1
+  - city: Saint Laurent d'Arce
+    lat: 45.035
+    lng: -0.469
+    type: flechage
+    count: 1
