@@ -324,3 +324,8 @@ interventions:
     lng: -0.207
     type: flechage
     count: 1
+  - city: Cosne Cours sur Loire
+    lat: 47.41
+    lng: 2.925
+    type: flechage
+    count: 1
