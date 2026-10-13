@@ -274,3 +274,8 @@ interventions:
     lng: -0.519
     type: flechage
     count: 1
+  - city: Orignolles
+    lat: 45.231
+    lng: -0.235
+    type: flechage
+    count: 1
