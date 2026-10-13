@@ -299,3 +299,8 @@ interventions:
     lng: -0.809
     type: flechage
     count: 1
+  - city: Sainte Radegonde
+    lat: 45.846
+    lng: -0.874
+    type: flechage
+    count: 1
