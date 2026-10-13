@@ -334,3 +334,8 @@ interventions:
     lng: -0.569
     type: flechage
     count: 1
+  - city: Pons
+    lat: 45.583
+    lng: -0.55
+    type: pigeons
+    count: 5
