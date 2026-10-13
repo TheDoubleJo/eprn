@@ -254,3 +254,8 @@ interventions:
     lng: -1.151
     type: pigeons
     count: 1
+  - city: Montoulieu Saint Bernard
+    lat: 43.234
+    lng: 0.916
+    type: flechage
+    count: 1
