@@ -264,3 +264,8 @@ interventions:
     lng: -1.037
     type: flechage
     count: 1
+  - city: Vanzac
+    lat: 45.358
+    lng: -0.303
+    type: flechage
+    count: 1
