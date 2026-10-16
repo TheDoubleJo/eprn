@@ -349,3 +349,8 @@ interventions:
     lng: 0.571
     type: pigeons
     count: 4
+  - city: Pont L'Abbé d'Arnoult
+    lat: 45.83
+    lng: -0.874
+    type: pigeons
+    count: 4
