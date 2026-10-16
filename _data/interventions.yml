@@ -379,3 +379,8 @@ interventions:
     lng: -0.566
     type: pigeons
     count: 1
+  - city: Saint Ciers sur Gironde
+    lat: 45.291
+    lng: -0.609
+    type: pigeons
+    count: 3
