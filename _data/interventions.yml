@@ -344,3 +344,8 @@ interventions:
     lng: 4.083
     type: pigeons
     count: 1
+  - city: Mirambeau
+    lat: 45.373
+    lng: 0.571
+    type: pigeons
+    count: 4
