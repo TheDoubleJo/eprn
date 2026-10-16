@@ -359,3 +359,8 @@ interventions:
     lng: -0.677
     type: pigeons
     count: 3
+  - city: Cozes
+    lat: 45.583
+    lng: -0.833
+    type: pigeons
+    count: 5
