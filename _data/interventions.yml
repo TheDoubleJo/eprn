@@ -384,3 +384,8 @@ interventions:
     lng: -0.609
     type: pigeons
     count: 3
+  - city: Etauliers
+    lat: 45.224
+    lng: -0.572
+    type: pigeons
+    count: 1
