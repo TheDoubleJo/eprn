@@ -339,3 +339,8 @@ interventions:
     lng: -0.55
     type: pigeons
     count: 5
+  - city: Alès
+    lat: 44.133
+    lng: 4.083
+    type: pigeons
+    count: 1
