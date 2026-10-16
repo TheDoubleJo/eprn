@@ -369,3 +369,8 @@ interventions:
     lng: -0.953
     type: pigeons
     count: 2
+  - city: Epargnes
+    lat: 45.542
+    lng: -0.802
+    type: pigeons
+    count: 1
