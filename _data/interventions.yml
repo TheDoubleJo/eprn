@@ -374,3 +374,8 @@ interventions:
     lng: -0.802
     type: pigeons
     count: 1
+  - city: Saint Genis de Saintonge
+    lat: 45.483
+    lng: -0.566
+    type: pigeons
+    count: 1
