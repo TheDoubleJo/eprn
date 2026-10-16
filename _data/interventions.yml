@@ -364,3 +364,8 @@ interventions:
     lng: -0.833
     type: pigeons
     count: 5
+  - city: Meschers sur Gironde
+    lat: 45.557
+    lng: -0.953
+    type: pigeons
+    count: 2
