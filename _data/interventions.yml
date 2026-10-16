@@ -354,3 +354,8 @@ interventions:
     lng: -0.874
     type: pigeons
     count: 4
+  - city: Gémozac
+    lat: 45.571
+    lng: -0.677
+    type: pigeons
+    count: 3
