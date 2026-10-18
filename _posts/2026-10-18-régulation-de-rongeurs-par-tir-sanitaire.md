@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Régulation de Rongeurs par tir sanitaire
-description: Ce travail en zone ouverte nécessite une sécurisation renforcée, gràce aux service hygiène et à la police municipale
+description: Ce travail en zone ouverte nécessite une sécurisation renforcée, gràce au service hygiène et à la police municipale.
 image: /images/uploads/Sécurisation Avenue.jpg
 youtube_url: https://youtu.be/AQ6akFa7HYI?si=SF_JN3rPSbZJXCCl
 date: 2026-10-18 12:15:00 +0200
