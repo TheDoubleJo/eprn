@@ -7,7 +7,7 @@ description: |-
   C'est avec une très grande tristesse que nous devons vous annoncer que la SARL EPRN est en deuil.
 image: /images/uploads/Croix.jpeg
 youtube_url: ''
-date: 2026-11-06 11:41:00 +0100
+date: 2026-11-08 18:40:00 +0100
 ---
 
 La société vient de perdre, le 28 Octobre 2026, par un terrible accident de travail, une très belle personne, sa gérante, Madame Valérie Brocki.
