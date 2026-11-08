@@ -10,8 +10,7 @@ youtube_url: ''
 date: 2026-11-06 11:41:00 +0100
 ---
 
-
-La société vient de perdre, par un terrible accident de travail, une très belle personne, sa gérante, Madame Valérie Brocki.
+La société vient de perdre, le 28 Octobre 2026, par un terrible accident de travail, une très belle personne, sa gérante, Madame Valérie Brocki.
 
 Pour l'amour de sa mère et par respect pour l'immense travail effectué par Valérie, sa fille Marie Amélie a décidé de reprendre la gérance de l'entreprise, afin de continuer de vous offrir les services de qualité initiés par sa mère.
 
@@ -19,6 +18,6 @@ Merci de votre compréhension, pour les quelques aléas, qui pourraient survenir
 
 Mais soyez certains que la philosophie, de la satisfaction clients, développée par Valérie restera l'axiome premier de notre entreprise.
 
-Monsieur Dominique Audouin Co-gérand de la SARL EPRN, sera à l'écoute de toutes vos demandes au 0689541764.
+Monsieur Dominique Audouin Co-gérand de la SARL EPRN, sera à l'écoute de toutes vos demandes au 0607516316.
 
 Bien amicalement
