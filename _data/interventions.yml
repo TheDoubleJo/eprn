@@ -84,11 +84,11 @@ interventions:
     lng: 0.1561
     type: pigeons
     count: 6
-  - city: Valençay
+  - city: Vallenay
     lat: 47.1597
     lng: 1.5636
     type: pigeons
-    count: 3
+    count: 4
   - city: Sillé-le-Guillaume
     lat: 48.1844
     lng: -0.115
