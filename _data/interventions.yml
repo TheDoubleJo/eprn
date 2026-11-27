@@ -399,3 +399,8 @@ interventions:
     lng: -0.464
     type: pigeons
     count: 1
+  - city: Vichy
+    lat: 46.116
+    lng: 3.416
+    type: pigeons
+    count: 1
